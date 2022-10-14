@@ -1,0 +1,39 @@
+:root {
+  --color-background-magazine: #000000;
+  --color-simple-title: red;
+  --color-simple-background-magazine: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-simple-background-magazine);
+  background-color: var(--color-background-magazine);
+}
+
+main.revista {
+  width: 982px;
+  height: 1289px;
+  background-color: cadetblue;
+  margin: 50% auto;
+}
+
+article {
+}
+
+article h2 {
+  color: var(--color-simple-title);
+  font-size: 48px;
+}
+
+article p {
+  font-size: 72px;
+}
