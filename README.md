@@ -18,7 +18,7 @@ For example:
 
 Then the developer add and commit the changes:
 
-`git add . && git commit -m "feat: "` or `git checkout -b "develop-doe-john"`
+`git add . && git commit -m "feat: "` or `git checkout -b "develop__doe-john"`
 
 ```mermaid
     gitGraph
