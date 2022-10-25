@@ -1,0 +1,104 @@
+body {
+  background-color: var(--background-page);
+}
+
+main {
+  background-color: var(--color-secondary);
+  max-width: var(--news-paper-width);
+  margin: 1rem auto;
+  border: var(--news-paper-border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+/** Header **/
+
+header h1 {
+  font-family: var(--typography-title);
+  font-size: var(--font-size-xxxl);
+  text-align: center;
+  line-height: 1;
+  height: var(--news-paper-title-height);
+}
+
+header > aside {
+  font-family: 'M PLUS 1p', Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-ulg);
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 500;
+  align-self: center;
+}
+
+header > aside > span {
+  font-size: var(--font-size-lg);
+}
+
+/** Article News **/
+
+article > h3 {
+  font-size: var(--font-size-xxl);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+article section {
+  display: flex;
+}
+
+.left-side {
+  margin-right: 1rem;
+}
+
+.right-side {
+  margin-left: 1rem;
+}
+
+section > aside.left-side {
+  width: 40%;
+}
+
+section > article.right-side {
+  width: 70%;
+}
+
+.border-image {
+  border: var(--news-paper-border);
+  border-radius: 0.5rem;
+}
+
+/** Article News - Left Side **/
+
+aside.left-side picture {
+  margin-top: 2rem;
+}
+
+/** Article News - Right Side **/
+article.right-side > header {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  padding-block: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+.right-side section {
+  margin-top: 2rem;
+}
+
+.right-side section > p {
+  width: 50%;
+}
+
+.right-side section > figure {
+  width: 50%;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.right-side section > figure figcaption {
+  margin-top: 1rem;
+}
