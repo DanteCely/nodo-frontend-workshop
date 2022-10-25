@@ -8,7 +8,7 @@ It is a collection of workshops to learn frontend topics. 🧑‍💻🎨
   - Jane Doe: *develop__doe-jane*
 
 
-From the **main** branch put the next command: `git checkout -b "develop-doe-john"`
+From the **main** branch put the next command: `git checkout -b "develop__doe-john"`
 
 2. After that, each developer have to create their own folder and add `.gitkeep` file:
 
@@ -18,7 +18,7 @@ For example:
 
 Then the developer add and commit the changes:
 
-`git add . && git commit -m "feat: "` or `git checkout -b "develop__doe-john"`
+`git add . && git commit -m "feat: Add new features"` or `git checkout -b "develop__doe-john"`
 
 ```mermaid
     gitGraph
