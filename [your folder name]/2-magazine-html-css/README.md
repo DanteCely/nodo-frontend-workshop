@@ -1,4 +1,4 @@
-### Implement your own magazine disign
+### Implement your own magazine design
 
 Try to use your CSS skills and break your creativity. Taking into account this advices.
 - Find out your assets like images, logo, colors palette & fonts.
