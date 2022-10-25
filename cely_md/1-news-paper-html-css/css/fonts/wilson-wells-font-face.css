@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Wilson Wells';
+  src: url('../../assets/fonts/Wilson-wells/Wilson-wells.otf') format('opentype'),
+    url('../../assets/fonts/Wilson-wells/Wilson-wells.ttf') format('truetype'),
+    url('../../assets/fonts/Wilson-wells/Wilson-wells.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
