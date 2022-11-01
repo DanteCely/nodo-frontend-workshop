@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -28,12 +28,12 @@
 <body>
     <h1>Formulario de inscripcion al modulo "Front End" de NODO - EAFIT</h1>
 
-    <div>
+    <div class="firts">
     <label for="first-name">Nombres:</label><br>
     <input id="first-name" type="text" name="textfield" autocomplete="" required>
     </div>
 
-    <div>
+    <div class="firts">
     <label for="last-name" class="required-field">Apellidos:</label><br>
     <input id="last-name" type="text" autocomplete="" name="textfield" aria-describedby="required-message" required>
     </div><br>
@@ -44,7 +44,18 @@
         <select id="sex" name="select">
         <option value="1">Hombre</option>
         <option value="2">Mujer</option>
-        <option value="3">Otro</option>
+        <option value="3">Otro</option></select><br>
+
+    </div><br>
+
+    <div>
+
+        <label for="education">¿Cual es tu nivel educativo?</label><br>
+        <select id="education" name="select">
+        <option value="1">Bachiller</option>
+        <option value="2">Profesional</option>
+        <option value="3">Tecnico</option>
+        <option value="4">Tecnologo</option>
         </select><br>
 
     </div><br>
@@ -92,12 +103,11 @@
         </fieldset>
     </div>
 
-    <div>
-
-
+    <footer>
+    <div class="row">
+        <input type="submit" value="Submit">
     </div>
-
-
+    </footer>
 
 </body>
 </html>

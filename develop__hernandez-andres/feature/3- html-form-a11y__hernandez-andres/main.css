@@ -1,7 +1,60 @@
+:root{
+    --body-sise: 1.8rem;
+    --head-size: 3.4rem;
+    --subhead-size: 3rem;
+    --input-size: 1.7rem;
+}
+
+h1{
+    font-size: var(--head-size); 
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: antiquewhite;
+    width: 99%;
+    height: 99%;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label{
+    font-size: var(--input-size);
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.firts label{
+    font-size: var(--body-sise);
+}
+
+legend{
+    font-size: var(--input-size);
+}
+
+#sex{
+    size: 2rem;
+}
+
+input[type=submit] {
+    background-color: #e77110;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    margin: 5px;
 }
