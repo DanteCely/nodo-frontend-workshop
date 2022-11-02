@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+}
+
+.magazine-navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.magazine-navigation a {
+  width: 40rem;
+  margin: 4rem;
+}/*# sourceMappingURL=index.css.map */
