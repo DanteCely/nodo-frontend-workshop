@@ -1,3 +1,6 @@
+:root{
+    --yellow-color: rgb(233, 193, 21);
+}
 body{
     width: 1600px;
     background-color: black;
@@ -10,7 +13,7 @@ body{
     display: block;
     height: 800px;
     width: 35%;
-    border: 35px solid rgb(233, 193, 21);
+    border: 35px solid var(--yellow-color);
     text-shadow: 5px 3px 7px black;
 }
 .maintitular{
@@ -27,7 +30,7 @@ body{
     color: rgb(241, 241, 241);
 }
 .yellow{
-    color: rgb(233, 193, 21);
+    color: var(--yellow-color);
 }
 .maintitular p{
     font-size: 35px;
@@ -63,7 +66,7 @@ body{
     justify-content: center;
 }
 #maintitular_title{
-    color: rgb(233, 193, 21);
+    color: var(--yellow-color);
     font-size: 75px;
     margin-top: 0px;
     margin-bottom: 0px;
