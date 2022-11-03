@@ -1,0 +1,119 @@
+/**/
+/*Se definen las variables*/
+/*Principales variables: color y tipografia*/
+:root{
+    /*colores*/
+    --color-primary: #f0f0f0;
+    --color-secondary: rgb(233, 229, 220);
+    --color-letter: #181818; 
+
+    --color-selection: #181818;
+    /*tipografias*/
+    --tipo-title: 'Angkor', cursive;
+    --tipo-principal: 'Tangerine', serif;
+
+    /*tamaños*/
+    --news-paper-width: 100%;
+    --main-width: 80%;
+    --article-size: 40%;
+    --news-paper-margin: 0.5rem;
+    /*tamaños imagenes*/
+    --img-harry-width: 30%;
+    --img-h-width: 30%;
+    --img-exclu-width: 30%;
+
+    /*padding*/
+    --padding-main: 0.5rem;
+
+    /* Font Sizes */
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-ulg: 2.1rem;
+    --font-size-xl: 1.9rem;
+    --font-size-xxl: 2.6rem;
+    --font-size-xxxl: 4.4rem;
+}
+
+/*adaptamos el modo oscuro*/
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-primary: #222121;
+        --color-secondary: #181818;
+        --color-letter: #fffafa; 
+    }
+    ::selection{
+        background-color: var(--color-primary);
+        color: var(--color-selection);
+    }
+}
+/*Optional*/
+
+/*Adaptamos alto contraste*/
+@media (prefers-contrast: high){
+    :root{
+        --color-primary: #f0f0f0;
+        --color-secondary: rgb(233, 229, 220);
+        --color-letter: #181818; 
+    }
+}
+
+/*Optional*/
+/*Desactivamos las animations. en caso que el usuario alla desactivado las animations*/
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation: none;
+        transition: none;
+    }
+}
+
+/*Celulares*/
+@media screen and (max-width: 480px){
+    :root{
+        --main-width: 100%;
+        --font-size-xxxl: 3.0rem;
+        --img-exclu-width: 50%;
+        --img-harry-width: 100%;
+        --img-h-width: 50%;
+    }
+    header > div{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section > article{
+        width: 100%;
+    }
+}
+
+/*tablets*/
+@media screen and (min-width: 481px){
+    :root{
+        --img-exclu-width: 50%;
+        --img-harry-width: 100%;
+        --img-h-width: 60%;
+        --font-size-xxxl: 3.5rem;
+    }
+    header > div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px){
+    :root{
+        --font-size-xxxl: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    :root{
+        --img-exclu-width: 30%;
+        --main-width: 60%;
+    }
+    
+}
