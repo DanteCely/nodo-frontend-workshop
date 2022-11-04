@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid red;
+    text-transform: uppercase;
+}
+@font-face {
+    font-family: headoh;
+    src: url("/public/fonts/HEADOH__.TTF");
+}
+body{
+    background-color: rgb(207, 194, 176);
+    /* text-align: center; */
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+.title{
+    font-family: headoh, serif;
+    font-size: 9em;
+    font-weight: lighter;
+    line-height: 90%;
+    margin: 0;
+    /* text-align: left; */
+}
+    .underline{
+        text-decoration-line: underline;
+        text-decoration-thickness: 5px;
+    }
+    .first-line{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ford-img{
+        width: 45%;
+        padding: 0 10px;
+        margin-right: 20px;
+        height: 125px;
+    }
+.coupons-section{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    margin: 10px 0;
+}
+    .coupons-section *{
+        margin: 0;
+    }
+    .coupon1{
+        font-family: headoh, serif;
+        width: 65%;
+    }
+        .coupon1 h3{
+            font-size: 1.5em;
+            font-weight: lighter;
+        }
+        .coupon1 p{
+            font-size: 0.7em;
+        }
+    .coupon2{
+        font-size: 0.7em;
+        position: relative;
+    }
+        .coupon2-title{
+            transform: scale(0.9, 1.5);
+            line-height: 90%;
+            padding-top: 10px;
+            width: 110%;
+            margin-left: -10px;
+        }
+        #number-15{
+            position: absolute;
+            left: 120px;
+            top: -7px;
+            font-size: 4.5em;
+            font-weight: lighter;
+        }
+.text-section{
+    position: absolute;
+    text-align: center;
+    width: 17%;
+    top: 282px;
+    right: 65px;
+    font-size: 0.47em;
+}
+        .text-section *{
+        margin: 0;
+        }
+        .text-title{
+            font-size: 120%;
+        }
+.aside-section{
+    transform: rotate(90deg);
+    display: flex;
+}
