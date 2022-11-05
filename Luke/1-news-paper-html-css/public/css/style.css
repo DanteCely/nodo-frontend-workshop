@@ -161,3 +161,85 @@ hr{
     border: rgb(70, 67, 67) 4px solid;
     margin-bottom: 0;
 }
+
+@media (max-width: 653px){
+    body{
+        width: auto;
+        margin: 5%;
+    }
+    .title{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 6em;
+    }
+        .first-line{
+            justify-content: center;
+        }
+        #ford-img{
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+            max-width: 280px;
+            padding-left: 5px;
+        }
+    .text-section{
+        position: static;
+        margin: 10% auto;
+        width: 90%;
+        font-size: 150%;
+    }
+    .coupons-section{
+        margin: auto;
+        width: 85%;
+        font-size: 130%;
+    }
+        #number-15{
+            left: 90%;
+            top: -17%;
+        }
+    .aside-section{
+        transform: initial;
+        position: initial;
+        width: auto;;
+    }
+        .lowercase{
+            font-size: 125%;
+        }
+}
+@media (max-width: 540px){
+    hr{
+        margin: 5%;
+    }
+}
+@media (max-width: 480px){
+    .coupon i, #number-15{
+        display: none;
+    }
+    .aside-section{
+        display: block;
+        text-align: center;
+    }
+        .aside-section *{
+            margin: auto;
+        }
+}
+@media (min-width:800px){
+    body{
+        width: auto;
+    }
+    .first-line{
+        justify-content: start;
+    }
+        #ford-img{
+            margin-left: 2%;
+            max-width: 500px;
+        }
+    .text-section{
+        display: block;
+        top: 23%;
+        right: 10%;
+        width: 22%;
+        font-size: 200%;
+    }
+}
