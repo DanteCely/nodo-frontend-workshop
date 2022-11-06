@@ -3,6 +3,7 @@
     --head-size: 3.4rem;
     --subhead-size: 3rem;
     --input-size: 1.7rem;
+    font-family: monospace
 }
 
 h1{
@@ -16,7 +17,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: rgb(13, 94, 187);
+    color: white;
     width: 99%;
     height: 99%;
 }
@@ -62,4 +64,21 @@ input[type=submit] {
 #age{
     height: 1.7rem;
     width: 2.0rem;
+}
+
+
+.gif{
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    max-height: fit-content;
 }
