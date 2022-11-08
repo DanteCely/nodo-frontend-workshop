@@ -1,0 +1,69 @@
+@import url(//db.onlinewebfonts.com/c/759573e11a5e10f3e75b30c7a37d02a3?family=Old+London);
+
+@font-face {
+        
+    font-family: "Old London"; src: url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.eot"); src: url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.woff") format("woff"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.svg#Old London") format("svg"); }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+header footer{
+    display: flex;
+    justify-content: space-between ;
+    
+}
+
+header h1 {
+    
+font-family: "Old London";
+font-size: 100px;
+    
+}
+
+.vl {
+    border-left: 1.5px solid rgba(85, 81, 81, 0.267);
+    height: 1250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -198px;
+    top: 50; 
+}
+
+
+
+
+
+
+.column{
+    float: left;
+    width: 150px;
+  
+ 
+
+
+}
+
+.column_1{
+    float: left;
+    width: 150px;
+ 
+
+
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    width: 500px;
+    /* position: absolute;  */
+
+}
+
+
+
+
