@@ -28,7 +28,7 @@ body{
     line-height: 98%;
     margin: 0;
     letter-spacing: -2px;
-    /* text-align: left; */
+    text-align: left;
 }
     .underline{
         text-decoration-line: underline;
@@ -223,23 +223,57 @@ hr{
         .aside-section *{
             margin: auto;
         }
+    .title{
+        font-size: 300%;
+    }
+    #ford-img{
+        width: 20%;
+        min-width: 100px;
+        max-width: 140px;
+        height: auto;
+    }
 }
-@media (min-width:800px){
+@media (min-width:900px){
     body{
-        width: auto;
+        width: 900px;
     }
-    .first-line{
-        justify-content: start;
+    .title{
+        text-align: center;
     }
+        .first-line{
+            justify-content: center;
+        }
         #ford-img{
             margin-left: 2%;
             max-width: 500px;
         }
     .text-section{
-        display: block;
-        top: 23%;
-        right: 10%;
-        width: 22%;
+        position: initial;
+        width: 80%;
+        margin: auto;
         font-size: 200%;
+        padding: 20px 0;
+    }
+    .coupons-section{
+        width: 90%;
+        margin: auto;
+    }
+        .coupon1{
+            font-size: 120%;
+        }
+        .coupon2{
+            font-size: 100%;
+        }
+        #number-15{
+            left: 190px;
+            top: -40px;
+        }
+    .aside-section{
+        width: 630px;
+        right: -295px;
+        top: 500px;
+    }
+    .lowercase{
+        font-size: 125%;
     }
 }
