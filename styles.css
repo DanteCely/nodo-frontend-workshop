@@ -26,12 +26,11 @@ font-size: 100px;
 }
 
 .vl {
-    border-left: 1.5px solid rgba(85, 81, 81, 0.267);
+    border-left: 3.0px solid rgba(85, 81, 81, 0.267);
     height: 1250px;
     position: absolute;
-    left: 50%;
-    margin-left: -198px;
-    top: 50; 
+    left: 30%;
+  
 }
 
 
@@ -65,4 +64,8 @@ font-size: 100px;
 .main {
     
     width: 70%;
+}
+
+.columns_1 {
+    display: flex;
 }
