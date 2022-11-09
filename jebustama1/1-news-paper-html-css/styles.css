@@ -38,32 +38,31 @@ font-size: 100px;
 
 
 
-
-.column{
-    float: left;
-    width: 150px;
-  
- 
-
-
+.sections {
+    display: flex;
 }
 
-.column_1{
-    float: left;
-    width: 150px;
- 
-
-
+.columns {
+    display: flex;
 }
 
-.title {
-    font-size: 20px;
-    font-weight: bold;
-    width: 500px;
-    /* position: absolute;  */
-
+.title{
+    width: 100%;
 }
 
+.left-column {
+    width: 50%;
+}
 
+.right-column {
+    width: 50%;
+}
 
+.aside {
+    width: 30%;
+}
 
+.main {
+    
+    width: 70%;
+}
