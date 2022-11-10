@@ -4,12 +4,32 @@
         
     font-family: "Old London"; src: url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.eot"); src: url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.woff") format("woff"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/759573e11a5e10f3e75b30c7a37d02a3.svg#Old London") format("svg"); }
 
+@page {
+
+
+    
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    min-height: 102vh;
+    max-width: 2000px;
+    background-color: rgb(252, 248, 248);
+    border: 5px solid;
+    width: 60%;
+    height: 50%;
+    margin: 25% 20% 25% 20%;
+    
+    
+    
+}
 
+html {
+    background-color: rgb(160, 133, 255);
+    height: 100%;
+    
 }
 
 header footer{
