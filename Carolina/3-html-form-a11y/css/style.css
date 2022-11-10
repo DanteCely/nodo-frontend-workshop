@@ -1,0 +1,37 @@
+body{
+    background-image: var(--background);
+}
+header{
+    line-height: 0.8;
+    position: fixed;
+    width: 98%;
+    top: 0;
+}
+.header{
+    background-color: rgba(1,26,48,255);
+    color: var(--color-letter-secondary);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+main{
+    background-color: rgb(222, 238, 238);
+    width: var(--width-main);
+    padding: var(--padding-main); /*estacio que esta adentro alrededor de la revista*/
+    margin: 5.6em auto; /*espacio alrededor de la revista, ayuda a que quede centrado*/
+}
+
+
+h1{
+    font-family: var(--tipo-tittle);
+    font-size: var(--font-size-xxxl);
+}
+fieldset{
+    border-radius: 10px;
+
+}
+img{
+    width: var(--shield-width);
+}
+

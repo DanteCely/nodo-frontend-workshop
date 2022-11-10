@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    
+    <link rel="shortcut icon" href="css/img/shield.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/custom-properties.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="css/img/shield.png" alt="Escudo Hogtwarts">
+            <div class="school">
+                <h1>Hogwarts</h1>
+                <p>School of Witchcraft and Wizardry</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Wanna be a wizard?</h2>
+            <p>Fill out the form and get ready to be part of a magic world.</p>
+            <form action="">
+                <fieldset>
+                    <legend> Tell us your name</legend>
+                    <label for="name">Name</label>
+                    <input type="" id="name">
+                    <label for="last-name"> Lastname</label>
+                    <input type="text" id="last-name">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Let us know your age</legend>
+                    <label for="birth">Date of birth</label>
+                    <input type="date" id="birth">
+                    <label for="age">Age</label>
+                    <input type="text" id="age">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>How can we contact you?</legend>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+                    <label for="cel">Cel</label>
+                    <input type="tel" id="cel">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>We wanna know some info about your preferences</legend>
+                    <label for="houses">What house do you like?</label>
+                    <select id="houses">
+                        <option value="Gryffindor">Gryffindor</option>
+                        <option value="Hufflepuff">Hufflepuff</option>
+                        <option value="Ravenclaw">Ravenclaw</option>
+                        <option value="Slytherin">Slytherin</option>
+                    </select>
+                    <label for="text-area">Tell us why you wanna be a wizard</label>
+                    <textarea id="text-area" cols="30" rows="10"></textarea>
+                </fieldset>
+                <button type="reset">Reset info</button>
+                <button type="submit">Send info</button>
+            </form>
+        </section>
+        <footer>
+        
+        </footer>
+    </main>
+</body>
+</html>

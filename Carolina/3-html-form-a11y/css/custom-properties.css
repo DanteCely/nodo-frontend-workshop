@@ -1,0 +1,32 @@
+:root{
+    --background: url(img/harry-place.jpg);
+    --color-primary: rgb(188, 248, 203);
+
+    --color-letter: black;
+    --color-letter-secondary: white;
+    --tipo-principal: 'Marcellus', serif;
+    --tipo-tittle: MagicText;
+
+    --color-letter-slection: rgb(43, 170, 184);
+    --color-selection: #181818;
+
+    --width-main: 75%;
+    --padding-main: 2em;
+
+    --shield-width: 100px;
+    --shield-max-width: 100%;
+
+    /* Font Sizes */
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-ulg: 2.1rem;
+    --font-size-xl: 1.9rem;
+    --font-size-xxl: 2.6rem;
+    --font-size-xxxl: 5.5rem;
+}
+
+@font-face {
+    font-family: MagicText;
+    src: url(fonts/HARRYP__.TTF);
+}
