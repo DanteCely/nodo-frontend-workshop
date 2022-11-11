@@ -29,22 +29,24 @@
     <main>
         <section>
             <h2>Wanna be a wizard?</h2>
-            <p>Fill out the form and get ready to be part of a magic world.</p>
+            <p>Fill out the form and get ready to be part of a magic world.</p> <br>
             <form action="">
                 <fieldset>
                     <legend> Tell us your name</legend>
                     <label for="name">Name</label>
-                    <input type="" id="name">
+                    <input type="text" id="name" placeholder="Carolina">
                     <label for="last-name"> Lastname</label>
-                    <input type="text" id="last-name">
+                    <input type="text" id="last-name" placeholder="Colorado">
                 </fieldset>
                 <br>
                 <fieldset>
-                    <legend>Let us know your age</legend>
+                    <legend>Give us more information</legend>
                     <label for="birth">Date of birth</label>
                     <input type="date" id="birth">
                     <label for="age">Age</label>
-                    <input type="text" id="age">
+                    <input type="number" list="tickmarks" placeholder="24">
+                    <label for=""></label>
+                    <input type="text">
                 </fieldset>
                 <br>
                 <fieldset>
@@ -66,7 +68,7 @@
                     </select>
                     <label for="text-area">Tell us why you wanna be a wizard</label>
                     <textarea id="text-area" cols="30" rows="10"></textarea>
-                </fieldset>
+                </fieldset><br>
                 <button type="reset">Reset info</button>
                 <button type="submit">Send info</button>
             </form>
