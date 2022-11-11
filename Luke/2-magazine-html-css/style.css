@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    width: 1200px;
+}
+body{
+    background-image: url(https://media-assets.wired.it/photos/626a75b6a2b23ded283d9ce0/5:7/w_1140,h_1596,c_limit/Elon-Musk-Right-Wing-Trolls-Twitter-Business-2J3KF1H.jpg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-x: center;
+    width: 80%;
+    margin: auto;
+    padding: 2% 5%;
+}
+.image-container{
+    z-index: -5;
+    width: auto;
+}
+.background-image{
+    width: 100%;
+}
+.text-container{
+    width: auto;
+    background-color: rgba(255,255,255,0.3);
+    z-index: -2;
+}
+section{
+    display: flex;
+}
+.upper-half{
+    justify-content: space-between;
+    height: 50%;
+
+}
+.left, .right{
+    flex-direction: column;
+    text-align: center;
+}
+.left{
+    width: 70%;
+}
+.title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    max-width: 645px;
+    min-width: 422px;
+}
+.title h1{
+    font-size: 10em;
+    margin: 0;
+    min-width: 340px;
+    z-index: 0;
+    font-family: serif;
+}
+.title h3{
+    position: relative;
+    right: 50px;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.3);
+}
+.left-upper h5{
+    margin: 0;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 30px;
+    left: -80px;
+}
+.left-mid{
+    width: 50%;
+}
+.left-mid *{
+    margin: 20px 0;
+    color: white;
+}
+.black-text{
+    color: black;
+}
+.bordered-text{
+    color: white;
+    margin: auto;
+    width: 70px;
+    background-color: black;
+}
+.right{
+    width: 30%;
+}
+.right-upper{
+    color: white;
+}
+.right-upper h2{
+    margin-bottom   : 0;
+    font-size: 2em;
+}
+.right-upper h3{
+    margin: 0;
+}
+.thirty-plus{
+    display: flex;
+    justify-content: center;
+    font-size: 10em;
+    margin: 0;
+    line-height: 130px;
+}
+#plus{
+    font-size: 0.4em;
+    line-height: initial;
+}
+.lower-half{
+    text-align: center;
+    height: 50%;
+    padding: 1%;
+}
+.elon-musk{
+    font-size: 12em;
+    margin: 0;
+    line-height: 115px;
+}
+#elon, #musk {
+    font-family: serif;
+}
+#elon{
+    font-size: 0.7em;
+}
+.elons-description{
+    font-size: 2em;
+}
+.right-mid{
+    color: white;
+}
+.bold{
+    font-weight: bold;
+    color: black !important;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: auto;
+}
+.left-info-footer{
+    transform: rotate(-90deg);
+    height: 10%;
+}
+.right-footer{
+    color: white;
+}
