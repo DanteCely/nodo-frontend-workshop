@@ -1,20 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color_sec: red;
+}
+
+@font-face {
+    font-family: butlerfont;
+    src: url(/grisales_jp/2-magazine-html-css/butler_stencil/Butler_Stencil_Webfont/ButlerStencil-Black.woff2);
+}
+
 body {
     background-color:  rgb(114, 124, 124);
+    background-image: url(./imagenes/LeoCoverFondless.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     margin: 0%;
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    ".izquierda .derecha"
+    "main main "
+    "footer . "
 }
 
-main {
+.gq {
+    width: 50vw;
+    height: 30vh;
+}
+
+.marca {
+    width: 100%;
+    height: 90%;
+    font-size: 15rem;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    display: block;
+    width: 50vw;
+    height: 30vh;
+}
+
+.report {
+    width: 25%;
+    order: 1;
+}
+
+.izquierda__1 {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    order: 2;
+}
+
+.izquierda__2 {
+    display: flex;
+}
+
+.exclusiva_izq {
+    color: var(--color_sec);
+}
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    display: inline-block;
+    width: 25vw;
+    height: 1vh;
+}
+
+.num {
+    color: var(--color_sec);
+}
+
+.titular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.revista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 35vh;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+.principal {
+    font-size: 10rem;
+    text-align: center;
+    line-height: 0.75;
+    width: 100%;
+    font-family: butlerfont;
+}
+
+.principal_2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0.7;
+    font-family: butlerfont;
 
 }
 
-#Titular {
-    font-size: large;
-    color: aliceblue;
+.exclusiva {
+    color: var(--color_sec);
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-img {
-    
-    
+footer {
+    width: 11vw;
+    height: 2vh;
+    background-color: rgb(64, 66, 66);
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
 }
