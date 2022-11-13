@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hogwarts</title>
-    
+    <script src="app.js"></script>
     <link rel="shortcut icon" href="css/img/shield.png" type="image/x-icon" />
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('74aMLDEH1FyAfjMWJ')
+    </script>
 
     <link rel="stylesheet" href="css/custom-properties.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -25,6 +32,7 @@
                 <p>School of Witchcraft and Wizardry</p>
             </div>
         </div>
+        
     </header>
     <main>
         <section>
@@ -33,8 +41,8 @@
             <form action="">
                 <fieldset>
                     <legend> Tell us your name</legend>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Carolina">
+                    <label for="to_name">Name</label>
+                    <input type="text" name="to_name" id="to_name">
                     <label for="last-name"> Lastname</label>
                     <input type="text" id="last-name" placeholder="Colorado">
                 </fieldset>
@@ -45,8 +53,13 @@
                     <input type="date" id="birth">
                     <label for="age">Age</label>
                     <input type="number" list="tickmarks" placeholder="24">
-                    <label for=""></label>
-                    <input type="text">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Percentage of blood</legend>
+                    <label for="blood">Moggle</label>
+                    <input type="range" id="blood">
+                    <label for="blood">Wizard</label>
                 </fieldset>
                 <br>
                 <fieldset>
@@ -66,15 +79,15 @@
                         <option value="Ravenclaw">Ravenclaw</option>
                         <option value="Slytherin">Slytherin</option>
                     </select>
-                    <label for="text-area">Tell us why you wanna be a wizard</label>
+                    <br><br>
+                    <label for="text-area">Tell us why you wanna be a wizard</label><br>
                     <textarea id="text-area" cols="30" rows="10"></textarea>
                 </fieldset><br>
                 <button type="reset">Reset info</button>
-                <button type="submit">Send info</button>
+                <input type="submit" id="button" value="Send Email" >
             </form>
         </section>
         <footer>
-        
         </footer>
     </main>
 </body>
