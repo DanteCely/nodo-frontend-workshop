@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hogwarts</title>
-    <script type="text/javascript" src="messaje.js"></script>
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -38,20 +37,28 @@
             <h2>Wanna be a wizard?</h2>
             <p>Fill out the form and get ready to be part of a magic world.</p> <br>
             <form action="" id="form">
-                <fieldset>
+                <fieldset class="section">
                     <legend> Tell us your name</legend>
-                    <label for="to_name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Carolina">
-                    <label for="last-name"> Lastname</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Colorado">
+                    <div class="input1">
+                        <label for="to_name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Carolina">
+                    </div>
+                    <div>
+                        <label for="last-name" class="space-left"> Lastname</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Colorado">
+                    </div>
                 </fieldset>
                 <br>
-                <fieldset>
+                <fieldset class="section">
                     <legend>Give us more information</legend>
-                    <label for="birth">Date of birth</label>
-                    <input type="date" id="birth">
-                    <label for="age">Age</label>
-                    <input type="number" list="tickmarks" placeholder="24">
+                    <div class="input1">
+                        <label for="birth">Date of birth</label>
+                        <input type="date" id="birth">
+                    </div>
+                    <div>
+                        <label for="age" class="space-left">Age</label>
+                        <input type="number" list="tickmarks" placeholder="24">
+                    </div>
                 </fieldset>
                 <br>
                 <fieldset>
@@ -61,12 +68,16 @@
                     <label for="blood">Wizard</label>
                 </fieldset>
                 <br>
-                <fieldset>
+                <fieldset class="section">
                     <legend>How can we contact you?</legend>
-                    <label for="mail">Email</label>
-                    <input type="email" id="email" name="email" placeholder="caro21p16@gmail.com">
-                    <label for="cel">Cel</label>
-                    <input type="tel" id="cel" placeholder="3167945716">
+                    <div class="input1">
+                        <label for="mail">Email</label>
+                        <input type="email" id="email" name="email" placeholder="caro21p16@gmail.com">
+                    </div>
+                    <div>
+                        <label for="cel" class="space-left">Cel</label>
+                        <input type="tel" id="cel" placeholder="3167945716">
+                    </div>
                 </fieldset>
                 <br>
                 <fieldset>
@@ -95,23 +106,23 @@
 <script>
     const btn = document.getElementById('button');
 
-    document.getElementById('form')
-    .addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-    btn.value = 'Signing in...';
+   btn.value = 'Sending...';
 
-    const serviceID = 'default_service';
-    const templateID = 'template_8unp0tx';
+   const serviceID = 'default_service';
+   const templateID = 'template_8unp0tx';
 
-    emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-        btn.value = 'Sign in';
-        alert('Sent!');
-        }, (err) => {
-        btn.value = 'Sign in';
-        alert(JSON.stringify(err));
-        });
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
     });
+});
 </script>
 </html>

@@ -1,6 +1,6 @@
 :root{
     --background: url(img/harry-place.jpg);
-    --color-primary: rgb(188, 248, 203);
+    --color-primary: rgba(222, 238, 238, 0.5);
 
     --color-letter: black;
     --color-letter-secondary: white;
@@ -10,8 +10,9 @@
     --color-letter-slection: rgb(43, 170, 184);
     --color-selection: #181818;
 
-    --width-main: 75%;
+    --width-main: 70%;
     --padding-main: 2em;
+    --space-label: 1rem;
 
     --shield-width: 100px;
     --shield-max-width: 100%;
@@ -24,9 +25,53 @@
     --font-size-xl: 1.9rem;
     --font-size-xxl: 2.6rem;
     --font-size-xxxl: 5.5rem;
+
+    --space-line: 0.9;
 }
 
 @font-face {
     font-family: MagicText;
     src: url(fonts/HARRYP__.TTF);
+}
+
+/*Celulares*/
+@media screen and (max-width: 480px){
+    :root{
+        --font-size-xxxl: 4.8rem;
+        --font-size-sm: 1rem;
+        --space-label: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .input1{
+        padding-bottom: 0.5rem;
+    }
+    
+}
+
+/*tablets*/
+@media screen and (min-width: 481px){
+    :root{
+        --space-label: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .input1{
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px){
+    :root{
+        
+    }
+}
+
+@media screen and (min-width: 1025px){
+    
 }

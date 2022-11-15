@@ -1,8 +1,9 @@
 body{
     background-image: var(--background);
+    
 }
 header{
-    line-height: 0.8;
+    line-height: var(--space-line);
     position: fixed;
     width: 98%;
     top: 0;
@@ -16,24 +17,29 @@ header{
     height: 100px;
 }
 main{
-    background-color: rgb(222, 238, 238);
+    border-radius: 1%;
+    background-color: var(--color-primary);
     width: var(--width-main);
-    padding: var(--padding-main); /*estacio que esta adentro alrededor de la revista*/
     margin: 5.6em auto; /*espacio alrededor de la revista, ayuda a que quede centrado*/
+    padding: var(--padding-main);
 }
-
 
 h1{
     font-family: var(--tipo-tittle);
     font-size: var(--font-size-xxxl);
 }
 fieldset{
+    border-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
-
 }
 img{
     width: var(--shield-width);
 }
-
+.section{
+    display: flex;
+}
+.space-left{
+    padding-left: var(--space-label);
+}
 
 
