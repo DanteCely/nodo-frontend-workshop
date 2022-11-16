@@ -3,15 +3,12 @@
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
-html{
-    width: 1200px;
-}
 body{
     background-image: url(https://media-assets.wired.it/photos/626a75b6a2b23ded283d9ce0/5:7/w_1140,h_1596,c_limit/Elon-Musk-Right-Wing-Trolls-Twitter-Business-2J3KF1H.jpg);
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 90%;
     background-position-x: center;
-    width: 80%;
+    width: 95%;
     margin: auto;
     padding: 2% 5%;
 }
@@ -117,9 +114,9 @@ section{
     padding: 1%;
 }
 .elon-musk{
-    font-size: 12em;
+    font-size: 8em;
     margin: 0;
-    line-height: 115px;
+    line-height: 80px;
 }
 #elon, #musk {
     font-family: serif;
