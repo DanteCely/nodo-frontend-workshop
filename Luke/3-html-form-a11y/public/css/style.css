@@ -26,7 +26,7 @@ header{
     position: fixed;
     background-color: rgb(212, 212, 212);
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid black;
 }
@@ -34,7 +34,7 @@ body{
     min-width: 385px;
 }
     h1{
-        margin: 0;
+        margin: 0 5%;
         font-size: 2.5em;
     }
     .header-img-container{
