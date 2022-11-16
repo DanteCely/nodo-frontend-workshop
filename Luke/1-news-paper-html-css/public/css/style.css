@@ -23,7 +23,7 @@ body{
 }
 .title{
     font-family: headoh, serif;
-    font-size: 9em;
+    font-size: 5em;
     font-weight: lighter;
     line-height: 98%;
     margin: 0;
@@ -96,9 +96,9 @@ body{
     position: absolute;
     text-align: center;
     width: 22%;
-    top: 300px;
-    right: 61px;
-    font-size: 0.56em;
+    top: 219px;
+    right: 86px;
+    font-size: 0.45em;
 }
         .text-section *{
         margin: 0;
@@ -117,8 +117,8 @@ body{
     align-items: center;
     position: absolute;
     width: 485px;
-    right: -210px;
-    top: 368px;
+    right: -224px;
+    top: 222px;
     justify-content: center;
 }
     .aside-section i{
@@ -131,7 +131,8 @@ body{
     }
     .aside-section h5{
         font-family: headoh, serif;
-        font-size: 1.7em;
+        font-size: 1em;
+        padding: 4px 0;
         width: 65%;
         text-align: center;
     }
