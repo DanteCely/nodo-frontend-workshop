@@ -1,0 +1,25 @@
+:root{
+    --color-selection: grey;
+
+    /* Font Sizes */
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-ulg: 2.1rem;
+    --font-size-xl: 1.9rem;
+    --font-size-xxl: 2.6rem;
+    --font-size-xxxl: 4.7rem;
+
+    /* Fonts */
+    --tittle-font: 'Noto Nastaliq Urdu', serif;
+    --tittle-main: 'Roboto Condensed', sans-serif;
+
+    --padding-main: 2em;
+    --border-main: 2rem;
+
+    --color-principal: rgb(216, 184, 39);
+    --color-letra: white;
+    
+
+}
+

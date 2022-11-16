@@ -1,0 +1,41 @@
+.magazine{
+    background-image: url(img/Niña.jpg); /*para linkear la imagen de fondo*/
+    border: var(--border-main) solid var(--color-principal); /*bordo amarillo*/
+    padding: var(--padding-main); /*espacio que esta adentro alrededor de la revista*/
+    margin: 0em auto; /*espacio alrededor de la revista, auto ayuda a que quede centrado*/
+    
+    /*tamaño de la revista*/
+    width: 612px;
+    height: 791px;
+
+    /*Poner la imagen completa de fondo*/ 
+    background-size: cover;
+
+    /*Ponerle color a la fuente*/
+    color: var(--color-letra);
+    position: relative;
+}
+
+h1{
+    font-family: var(--tittle-font);
+    font-size: var(--font-size-xxxl);
+    line-height: 1; /*Altura de la linea*/
+    text-align: center;
+}
+
+section{
+    padding-bottom: var(--padding-main );
+    position: absolute;
+    bottom: 0;
+
+}
+
+.mayus{
+    text-transform: uppercase;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

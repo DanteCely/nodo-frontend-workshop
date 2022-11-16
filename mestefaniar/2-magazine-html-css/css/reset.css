@@ -1,0 +1,27 @@
+/*Resetear margin, padding and border para que nada tenga espacios*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Determinar un mismo tamaño para todas las letras*/
+h1,
+p{
+    font-size: 0.8em;
+}
+
+/*Estilo para ponerle color a lo que selecciono*/
+
+::selection{
+    background-color: var(--color-selection);
+}
+
+::first-letter{
+    text-transform: uppercase;
+}
+
+body{
+    font-size: var(--font-size-md);
+    font-family: var(--tittle-main);
+}
