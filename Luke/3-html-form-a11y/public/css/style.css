@@ -46,6 +46,7 @@ body{
 }
 main{
     padding-top: 115px;
+    padding-bottom: 100px;
 }
 form, .info-container{
     width: 90%;
@@ -59,4 +60,5 @@ form, .info-container{
 
 button{
     font-size: 130%;
+    margin: 15px;
 }
