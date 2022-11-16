@@ -42,4 +42,7 @@ img{
     padding-left: var(--space-label);
 }
 
+button{
+    background-color: blue;
+}
 

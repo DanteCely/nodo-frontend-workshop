@@ -13,6 +13,7 @@
     --width-main: 70%;
     --padding-main: 2em;
     --space-label: 1rem;
+    --text-area-size: 250px;
 
     --shield-width: 100px;
     --shield-max-width: 100%;
@@ -37,6 +38,7 @@
 /*Celulares*/
 @media screen and (max-width: 480px){
     :root{
+        --text-area-size: 200px;
         --font-size-xxxl: 4.8rem;
         --font-size-sm: 1rem;
         --space-label: 0;
@@ -68,8 +70,13 @@
 /* Small screens, laptops */
 @media screen and (min-width: 769px){
     :root{
-        
+        --space-label: 1rem;
     }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    
 }
 
 @media screen and (min-width: 1025px){
