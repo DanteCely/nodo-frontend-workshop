@@ -12,20 +12,23 @@
 <body>
     <header>
         <div class="header-img-container">
-            <a class="go-to-form" href="#form">
+            <a class="go-to-top" href="#top">
                 <img class="nwlogo" src="../public/images/nwlogo.png" alt="Night's Watch logo">
             </a>
         </div>
         <h1>Night's Watch Application form</h1>
-        <i class="fa-solid fa-chevron-down"></i>
+        <a class="go-to-form" href="#info">
+            To Form
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
     </header>
     <main>
         <div class="nwvow-container">
-            <img class="nwvow" src="../public/images/NWVow.webp" alt="Vow of the Nigh's Watch">
+            <img id="nwvow" class="nwvow" src="../public/images/NWVow.webp" alt="Vow of the Nigh's Watch">
         </div>
-        <div class="info-container">
+        <div class="info-container" id="info">
             <h2>Welcome to Night Watch Application's job application form</h2>
-            <h3>Answer this questions and we will decide if you are worth to become a <strike>disposal</strike> soldier</h3>
+            <h3>Answer this questions and we will decide if you are worth to become a <strike>disposable</strike> soldier</h3>
         </div>
         <form id="form" action="./sent.html" method="get">
             <fieldset class="questions personal-questions">
