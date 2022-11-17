@@ -13,7 +13,7 @@
   /* Font Sizes */
   --font-size-sm: 1.6rem;
   --font-size-md: 1.8rem;
-  --font-size-lg: 1.8;
+  --font-size-lg: 2rem;
   --font-size-ulg: 2.4rem;
   --font-size-xl: 2.6rem;
   --font-size-xxl: 2.3rem;
@@ -73,6 +73,7 @@
   Fuente: https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
 */
 
+/* Smartphones */
 @media screen and (max-width: 480px) {
   :root {
     --news-paper-border: 0.3rem solid var(--color-primary);
