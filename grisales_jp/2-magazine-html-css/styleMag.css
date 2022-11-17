@@ -3,21 +3,17 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     font-size: 62.5%;
 }
-
 @font-face {
     font-family: stereofunk;
     src:url(/grisales_jp/2-magazine-html-css/stereofunk/Stereofunk.ttf);
 }
-
 @font-face {
     font-family: butlerfont;
     src: url(/grisales_jp/2-magazine-html-css/butler_stencil/Butler/Butler_Black.otf);
 }
-
 body {
     background: linear-gradient(to bottom, rgb(224, 216, 216), rgb(114, 111, 111));
     width: 100vw;
@@ -27,17 +23,14 @@ body {
     justify-content: space-between;
     position: relative;
 }
-
 main {
     width: 100%;
     height: 100%;
 }
-
 .gq {
     width: 100%;
     height: 32.5%;
 }
-
 h1 {
     width: 100%;
     height: 38%;
@@ -46,7 +39,6 @@ h1 {
     display: block;
     position: relative;
 }
-
 .GQ__1 {
     width: 50%;
     height: 2.5%;
@@ -59,7 +51,6 @@ h1 {
     justify-content: flex-end;
     align-items: flex-start;
 }
-
 .GQ__2 {
     width: 50%;
     height: 58%;
@@ -82,14 +73,12 @@ h1 {
     display: block;
     position: relative;
 }
-
 .izquierda__1 {
     width: 50%;
     height: 56%;
     margin-left: 20px;
 }
-
-h5 {
+.izquierda h5 {
     width: 32%;
     background-color: rgb(46, 45, 45);
     color: whitesmoke;
@@ -97,14 +86,12 @@ h5 {
     letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .izquierda__1--1 {
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: red;
 }
-
 .izquierda__1--2 {
     font-size: 0.9rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -112,11 +99,6 @@ h5 {
     width: 71.5%;
     display: inline-block;
 }
-
-.izquierda__1--2 hr {
-    width: 50%;
-}
-
 .izquierda__2 h4{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -124,7 +106,6 @@ h5 {
     font-size: 1.2rem;
     margin-left: 20px;
 }
-
 .izquierda__2 div{
     width: 100%;
     font-family: butlerfont;
@@ -132,7 +113,6 @@ h5 {
     font-size: 1.2rem;
     margin-left: 20px;
 }
-
 footer {
     width: 33%;
     height: 2.5%;
@@ -142,9 +122,8 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
 }
-
 .derecha {
-    width: 50%;
+    width: 48%;
     height: 100%;
     position: absolute;
     top: 1px;
@@ -156,53 +135,132 @@ footer {
     align-items: flex-start;
     display: inline-block;
 }
-
  .derecha h4 {
+    height: 5%;
+    width: 50%;
     color: red;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
  }
-
- .derecha div {
-    height: 50%;
-    width: 50%;
+ .derecha__1--1 {
+    height: 40%;
+    width: 100%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: butlerfont;
+    font-size: 2rem;
+ }
+ .derecha__1 {
+    width: 100%;
     position: right;
     left: 50%;
     display: flex;
     justify-content: flex-end;
+    text-align: center;
  }
-
  .titular {
     position: absolute;
     display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     height: 100%;
     top: 1px;
 }
-
  img {
     max-width: 100%;
     max-height: 98%;
     position: relative;
  }
-
  .titular__1 {
     width: 100%;
     position: absolute;
-    padding-bottom: 140px;
+    display: inline-block;
+    padding-bottom: 90px;
+ }
+ h2 {
+    width: 100%;
+    font-family: butlerfont;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    color: whitesmoke;
+    font-size: 6rem;
+    line-height: 4.5rem;
+    padding-left: 40px;
+    padding-right: 40px;
     display: inline-block;
  }
-
- 
-
-
-
+ .principal_2{
+    width: 100%;
+    font-family: butlerfont;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 1rem;
+ }
+ .exclusiva {
+    width: 100%;
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    line-height: 2.5rem;
+ }
+ .num {
+    color: red;
+    font-size: 5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 3.5rem;
+    display: inline-block;
+    font-weight: 800;
+ }
+ .derecha__2 {
+    height: 20%;
+    color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 600;
+ }
+ .derecha h5{
+    width: 32%;
+    background-color: rgb(46, 45, 45);
+    color: whitesmoke;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+ }
+ .derecha__3 {
+    height: 20%;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: right;
+ }
+ .derecha__3--1 {
+    color: red;
+    text-align: right;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 1.5rem;
+ }
+ .derecha__3--2 {
+    color: whitesmoke;
+    text-align: right;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 200;
+    font-size: 1rem;
+ }
 
