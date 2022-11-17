@@ -1,0 +1,40 @@
+:root{
+    /*colors*/
+    --color-principal: rgb(216, 184, 39);
+    --color-secondary: rgb(71, 134, 231);
+    --color-letraSecondary: #4c0b18; 
+    --color-letraPrincipal: white;
+    --color-letraPrincipal2: black;
+    --color-body: rgb(255, 245, 233);
+    --color-selection: rgb(126, 226, 60);
+    --degradado: linear-gradient(#33559b, #4766a5, #5c77af);
+
+    /*Sizes*/
+    --main-width: 100%;
+    --main-max-width: 40%;
+    --min-margin: 1rem;
+    --padding-main: 2em;
+    --border-main: 2rem;
+
+    /* Font Sizes */
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-ulg: 2.1rem;
+    --font-size-xl: 1.9rem;
+    --font-size-xxl: 2.6rem;
+    --font-size-xxxl: 4.7rem;
+
+    /*tipografias*/
+    --tipo-tittle: 'Noto Nastaliq Urdu', serif;
+    --tipo-nav: 'Open Sans', sans-serif;
+    --tipo-principal:'Oswald', sans-serif;
+
+}
+
+
+::first-letter{
+    text-transform: uppercase;
+}
+
+
