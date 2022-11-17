@@ -8,139 +8,201 @@ html {
     font-size: 62.5%;
 }
 
-:root {
-    --color_sec: red;
+@font-face {
+    font-family: stereofunk;
+    src:url(/grisales_jp/2-magazine-html-css/stereofunk/Stereofunk.ttf);
 }
 
 @font-face {
     font-family: butlerfont;
-    src: url(/grisales_jp/2-magazine-html-css/butler_stencil/Butler_Stencil_Webfont/ButlerStencil-Black.woff2);
+    src: url(/grisales_jp/2-magazine-html-css/butler_stencil/Butler/Butler_Black.otf);
 }
 
 body {
-    background-color:  rgb(114, 124, 124);
-    background-image: url(./imagenes/LeoCoverFondless.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to bottom, rgb(224, 216, 216), rgb(114, 111, 111));
     width: 100vw;
     height: 100vh;
     margin: 0%;
-    display: grid;
-    grid-template-rows: 4;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "header header"
-    ".izquierda .derecha"
-    "main main "
-    "footer . "
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    height: 100%;
 }
 
 .gq {
-    width: 50vw;
-    height: 30vh;
-}
-
-.marca {
     width: 100%;
-    height: 90%;
-    font-size: 15rem;
+    height: 32.5%;
 }
 
+h1 {
+    width: 100%;
+    height: 38%;
+    font-size: 15rem;
+    font-family: stereofunk;
+    display: block;
+    position: relative;
+}
+
+.GQ__1 {
+    width: 50%;
+    height: 2.5%;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    color: whitesmoke;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.GQ__2 {
+    width: 50%;
+    height: 58%;
+    font-size: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 .izquierda {
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: block;
-    width: 50vw;
-    height: 30vh;
-}
-
-.report {
-    width: 25%;
-    order: 1;
+    position: relative;
 }
 
 .izquierda__1 {
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-    order: 2;
+    width: 50%;
+    height: 56%;
+    margin-left: 20px;
 }
 
-.izquierda__2 {
-    display: flex;
-}
-
-.exclusiva_izq {
-    color: var(--color_sec);
-}
-
-.derecha {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-    display: inline-block;
-    width: 25vw;
-    height: 1vh;
-}
-
-.num {
-    color: var(--color_sec);
-}
-
-.titular {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-}
-
-.revista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-    height: 35vh;
+h5 {
+    width: 32%;
+    background-color: rgb(46, 45, 45);
     color: whitesmoke;
-    font-weight: lighter;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.principal {
-    font-size: 10rem;
-    text-align: center;
-    line-height: 0.75;
+.izquierda__1--1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: red;
+}
+
+.izquierda__1--2 {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    width: 71.5%;
+    display: inline-block;
+}
+
+.izquierda__1--2 hr {
+    width: 50%;
+}
+
+.izquierda__2 h4{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.izquierda__2 div{
     width: 100%;
     font-family: butlerfont;
-}
-
-.principal_2 {
-    font-size: 2rem;
-    text-align: center;
-    line-height: 0.7;
-    font-family: butlerfont;
-
-}
-
-.exclusiva {
-    color: var(--color_sec);
-    font-size: 1.5rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    margin-left: 20px;
 }
 
 footer {
-    width: 11vw;
-    height: 2vh;
+    width: 33%;
+    height: 2.5%;
     background-color: rgb(64, 66, 66);
     color: white;
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
     align-items: flex-start;
 }
+
+.derecha {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    padding-top: 15px;
+    padding-left: 100px;
+    left: 50%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    display: inline-block;
+}
+
+ .derecha h4 {
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+ }
+
+ .derecha div {
+    height: 50%;
+    width: 50%;
+    position: right;
+    left: 50%;
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .titular {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 1px;
+}
+
+ img {
+    max-width: 100%;
+    max-height: 98%;
+    position: relative;
+ }
+
+ .titular__1 {
+    width: 100%;
+    position: absolute;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+ }
+
+ 
+
+
+
+
