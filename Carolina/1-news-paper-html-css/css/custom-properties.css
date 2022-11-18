@@ -19,8 +19,6 @@
     --news-paper-margin: 0.5rem;
     /*tamaños imagenes*/
     --img-harry-width: 30%;
-    --img-h-width: 30%;
-    --img-exclu-width: 30%;
 
     /*padding*/
     --padding-main: 0.5rem;
@@ -77,9 +75,8 @@
     :root{
         --main-width: 100%;
         --font-size-xxxl: 3.0rem;
-        --img-exclu-width: 50%;
+        --font-size-xxl: 1.9rem;
         --img-harry-width: 100%;
-        --img-h-width: 50%;
     }
     header > div{
         display: flex;
@@ -97,14 +94,20 @@
 /*tablets*/
 @media screen and (min-width: 481px){
     :root{
-        --img-exclu-width: 50%;
+        --font-size-xxl: 2.2rem;
         --img-harry-width: 100%;
-        --img-h-width: 60%;
         --font-size-xxxl: 3.5rem;
     }
     header > div{
         display: flex;
         flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section > article{
+        width: 100%;
     }
 }
 
