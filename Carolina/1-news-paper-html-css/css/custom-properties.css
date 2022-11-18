@@ -35,6 +35,11 @@
     --font-size-xxxl: 4.4rem;
 }
 
+@font-face {
+    font-family: MagicText;
+    src: url(../fonts/tatu.ttf);
+}
+
 /*adaptamos el modo oscuro*/
 @media (prefers-color-scheme: dark){
     :root{
