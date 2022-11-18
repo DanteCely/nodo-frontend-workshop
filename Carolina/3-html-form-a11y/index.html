@@ -11,6 +11,7 @@
     <script type="text/javascript">
     emailjs.init('74aMLDEH1FyAfjMWJ')
     </script>
+    <script src="js/app.js"></script>
     <link rel="shortcut icon" href="css/img/shield.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/custom-properties.css">
@@ -24,7 +25,7 @@
 <body>
     <header>
         <div class="header">
-            <img src="css/img/shield.png" alt="Escudo Hogtwarts">
+            <img src="img/shield.png" alt="Escudo Hogtwarts">
             <div class="school">
                 <h1>Hogwarts</h1>
                 <p>School of Witchcraft and Wizardry</p>
@@ -41,7 +42,7 @@
                     <legend> Tell us your name</legend>
                     <div class="input1">
                         <label for="to_name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Carolina">
+                        <input type="text" name="name" id="name" placeholder="Carolina" required>
                     </div>
                     <div>
                         <label for="last-name" class="space-left"> Lastname</label>
@@ -53,11 +54,11 @@
                     <legend>Give us more information</legend>
                     <div class="input1">
                         <label for="birth">Date of birth</label>
-                        <input type="date" id="birth">
+                        <input type="date" id="birth" required min="1972-01-01" max="2004-12-31">
                     </div>
                     <div>
                         <label for="age" class="space-left">Age</label>
-                        <input type="number" list="tickmarks" placeholder="24">
+                        <input type="number" list="tickmarks" placeholder="24" id="age">
                     </div>
                 </fieldset>
                 <br>
@@ -72,7 +73,7 @@
                     <legend>How can we contact you?</legend>
                     <div class="input1">
                         <label for="mail">Email</label>
-                        <input type="email" id="email" name="email" placeholder="caro21p16@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="caro21p16@gmail.com" required>
                     </div>
                     <div>
                         <label for="cel" class="space-left">Cel</label>
@@ -93,36 +94,37 @@
                     <label for="text-area">Tell us why you wanna be a wizard</label><br>
                     <textarea id="text-area" cols="30" rows="10" placeholder="I love magic"></textarea>
                 </fieldset><br>
-                <button type="reset">Reset info</button>
-                <input type="submit" id="button" name="button" value="Sign in">
+                <div class="buttons">
+                    <button class="boton" type="reset">Reset info</button>
+                    <input class="boton" type="submit" id="button" name="button" value="Sign in">
+                </div>
             </form>
-            
         </section>
-        <footer>
-        </footer>
     </main>
+    <footer>
+        &copy; Copyright - Code made by Caro&#x1F497
+    </footer>
+    <script>
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_8unp0tx';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
 </body>
-
-<script>
-    const btn = document.getElementById('button');
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_8unp0tx';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
-</script>
 </html>

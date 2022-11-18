@@ -20,7 +20,7 @@ main{
     border-radius: 1%;
     background-color: var(--color-primary);
     width: var(--width-main);
-    margin: 5.6em auto; /*espacio alrededor de la revista, ayuda a que quede centrado*/
+    margin: 6em auto; /*espacio alrededor de la revista, ayuda a que quede centrado*/
     padding: var(--padding-main);
 }
 
@@ -42,7 +42,19 @@ img{
     padding-left: var(--space-label);
 }
 
-button{
-    background-color: blue;
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.boton{
+    margin: 0.3em;
+    font-family: var(--tipo-principal);
+    font-size: var(--font-size-ssm);
+    color: black;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    color: var(--color-letter-secondary);
+}

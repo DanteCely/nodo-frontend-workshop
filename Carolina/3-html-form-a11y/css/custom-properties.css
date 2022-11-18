@@ -1,5 +1,6 @@
+
 :root{
-    --background: url(img/harry-place.jpg);
+    --background: url(../img/harry-place.jpg);
     --color-primary: rgba(222, 238, 238, 0.5);
 
     --color-letter: black;
@@ -19,6 +20,7 @@
     --shield-max-width: 100%;
 
     /* Font Sizes */
+    --font-size-ssm: 1rem;
     --font-size-sm: 1.2rem;
     --font-size-md: 1.6rem;
     --font-size-lg: 1.8rem;
@@ -35,10 +37,12 @@
     src: url(fonts/HARRYP__.TTF);
 }
 
+
+
 /*Celulares*/
 @media screen and (max-width: 480px){
     :root{
-        --text-area-size: 200px;
+        --text-area-size: 160px;
         --font-size-xxxl: 4.8rem;
         --font-size-sm: 1rem;
         --space-label: 0;
