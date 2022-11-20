@@ -1,0 +1,84 @@
+:root{
+    --body-sise: 1.8rem;
+    --head-size: 3.4rem;
+    --subhead-size: 3rem;
+    --input-size: 1.7rem;
+    font-family: monospace
+}
+
+h1{
+    font-size: var(--head-size); 
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 94, 187);
+    color: white;
+    width: 99%;
+    height: 99%;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label{
+    font-size: var(--input-size);
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.firts label{
+    font-size: var(--body-sise);
+}
+
+legend{
+    font-size: var(--input-size);
+}
+
+#sex{
+    size: 2rem;
+}
+
+input[type=submit] {
+    background-color: #e77110;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    margin: 5px;
+}
+
+#age{
+    height: 1.7rem;
+    width: 2.0rem;
+}
+
+
+.gif{
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+}
