@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peliclick</title>
+    <link rel="stylesheet" href="/grisales_jp/3-html-form-a11y/style.css">
 </head>
 <body>
-    
+    <h1>Peliclick</h1>
+    <form>
+        <fieldset class="datospersonales">
+            <legend>Datos personales</legend>
+            <div>
+                <label for="username">Nombre:</label> <br>
+                <input type="text" id="username" name="username"> <br>
+                <label for="lastname">Apellido:</label> <br>
+                <input type="text" id="lastname" name="lastname"> <br> <br>
+            </div>
+            <div>
+                <label for="tID">Tipo de identificación:</label> <br>
+                <input type="radio" id="id" name="id" value="CC"/>
+                <label for="CC">Cédula de ciudadanía</label>
+                <input type="radio" id="id" name="id" value="psp"/>
+                <label for="psp">Pasaporte</label>
+                <input type="radio" id="id" name="id" value="nit"/>
+                <label for="nit">NIT</label> <br> <br>
+                <label for="ID">Número de identificación:</label> <br>
+                <input type="number" id="ID" name="ID"><br> <br>
+                <label for="fnac">Fecha de nacimiento</label> <br>
+                <input type="date" id="fnac" name="fnac" value="fnac">
+            </div>
+        </fieldset>
+        <fieldset class="">
+            <legend>Perfil</legend>
+            <label for="genero">Género:</label> <br>
+                <input type="checkbox" id="tipo" name="tipo" value="suspenso"/>
+                <label for="suspenso">Suspenso/Thriller</label> <br>
+                <input type="checkbox" id="tipo" name="tipo" value="terror"/>
+                <label for="terror">Terror</label> <br>
+                <input type="checkbox" id="tipo" name="tipo" value="drama"/>
+                <label for="drama">Drama/biográfico</label> <br>
+                <input type="checkbox" id="tipo" name="tipo" value="comedia"/>
+                <label for="comedia">Comedia</label> <br>
+                <input type="checkbox" id="tipo" name="tipo" value="infantil"/>
+                <label for="infantil">Infantil</label> <br>
+                <input type="checkbox" id="tipo" name="tipo" value="sci-fi"/>
+                <label for="sci-fi">Ciencia ficción</label> <br>
+                <input type="checkbox" id="tipo" name="tipo" value="nacional"/>
+                <label for="nacional">Nacional</label> <br>
+        </fieldset>
+    </form>
 </body>
 </html>
