@@ -1,0 +1,32 @@
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+    width: 100vh;
+    font-family: var(--printipal-font);
+    font-size: var(--font-size-ulg);
+    color: var(--printipal-color);
+}
+
+h1,
+p{
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  align-self: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -10,14 +10,7 @@
   --typography-primary: 'Old Standard TT', Helvetica, Arial, sans-serif;
   --typography-secundary: 'M PLUS 1p', Verdana;
 
-  /* Font Sizes */
-  --font-size-sm: 1.6rem;
-  --font-size-md: 1.8rem;
-  --font-size-lg: 1.8;
-  --font-size-ulg: 2.4rem;
-  --font-size-xl: 2.6rem;
-  --font-size-xxl: 2.3rem;
-  --font-size-xxxl: 3.8rem;
+ 
 
   /* width */
   --news-paper-width: 100%;
