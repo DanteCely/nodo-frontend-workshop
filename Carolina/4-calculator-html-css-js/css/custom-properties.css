@@ -28,3 +28,7 @@ button:active {
     background-color: var(--active-button);
 }
 
+button::selection{
+   color: aliceblue; 
+}
+
