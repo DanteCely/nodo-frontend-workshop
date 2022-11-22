@@ -1,34 +1,33 @@
 :root {
-    /* Font Sizes */
-    --font-size-sm: 1.6rem;
-    --font-size-md: 1.8rem;
-    --font-size-lg: 1.8;
-    --font-size-ulg: 2.1rem;
-    --font-size-xl: 2.6rem;
-    --font-size-xxl: 2.3rem;
-    --font-size-xxxl: 3.8rem;
+  /* Font Sizes */
+  --font-size-sm: 1.6rem;
+  --font-size-md: 1.8rem;
+  --font-size-lg: 1.8;
+  --font-size-ulg: 2.1rem;
+  --font-size-xl: 2.6rem;
+  --font-size-xxl: 2.3rem;
+  --font-size-xxxl: 3.8rem;
 
-    --printipal-font: 'Raleway', sans-serif;
+  --printipal-font: 'Raleway', sans-serif;
 
-    --printipal-color: #000000;
-    --calculator-color: rgb(189, 153, 223);
-    
-    --border-color: #df6baf;
-    --body-color: #1c8a99;
+  --printipal-color: #000000;
+  --calculator-color: rgb(189, 153, 223);
 
-    --radius: 10px;
-    --calculator-width: 50%;
-    --body-height: 100vh;
-    --calculator-border: 0.5rem solid var(--border-color);
+  --border-color: #df6baf;
+  --body-color: #1c8a99;
 
-    --active-button: rgb(40, 185, 211);
+  --radius: 10px;
+  --calculator-width: 50%;
+  --body-height: 100vh;
+  --calculator-border: 0.5rem solid var(--border-color);
+
+  --active-button: rgb(40, 185, 211);
 }
 
 button:active {
-    background-color: var(--active-button);
+  background-color: var(--active-button);
 }
 
-button::selection{
-   color: aliceblue; 
+button::selection {
+  color: var(--printipal-color);
 }
-
