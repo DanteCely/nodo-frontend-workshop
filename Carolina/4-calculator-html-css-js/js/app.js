@@ -1,9 +1,14 @@
 var operation = "";
 var result = "";
 function addValue(n){
-    operation += n;
-    document.getElementById('calculo').innerHTML = operation;
-    console.log(operation);
+    if(operation.length <=35){
+        operation += n;
+        document.getElementById('calculo').innerHTML = operation;
+        console.log(operation);
+    }else{
+        operation = operation;
+    }
+    
 }
 
 function borrar(){

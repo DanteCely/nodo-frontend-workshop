@@ -9,6 +9,7 @@
     --font-size-xxxl: 3.8rem;
 
     --printipal-font: 'Raleway', sans-serif;
+    --calculator-font: calculatorText;
 
     --printipal-color: #000000;
     --calculator-color: rgb(189, 153, 223);
@@ -22,6 +23,11 @@
     --calculator-border: 0.5rem solid var(--border-color);
 
     --active-button: rgb(40, 185, 211);
+}
+
+@font-face {
+    font-family: calculatorText;
+    src: url(../fonts/Calculator.ttf);
 }
 
 button:active {
