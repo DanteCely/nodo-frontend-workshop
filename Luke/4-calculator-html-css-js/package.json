@@ -1,0 +1,15 @@
+{
+  "name": "4-calculator-html-css",
+  "version": "1.0.0",
+  "description": "Choose one of them!\r - Scientific Calculator\r - Simple Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
