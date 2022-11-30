@@ -6,10 +6,22 @@
     font-family: Calculator;
     src: url(../fonts/Calculator.ttf);
 }
+body{
+    margin-top: 70px;
+}
+#jk-btn{
+    margin: 40px auto 20px;
+    width: 200px;
+    height: 40px;
+}
+#jk-btn:hover{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
 .calculator{
     width: 300px;
     height: 350px;
-    margin: 10% auto;
+    margin: 5% auto;
     border-radius: 5%;
     background-color: darkgrey;
     padding-bottom: 10px;
@@ -55,4 +67,7 @@ button{
 }
 button:hover{
     background-color: antiquewhite;
+}
+#result:hover{
+    background-color: rgba(255, 0, 0, 0.902);
 }

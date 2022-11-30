@@ -1,6 +1,13 @@
 var operation = "";
 var total = "";
 
+window.addEventListener("load", () => {
+    let jkBtn = document.querySelector('#jk-btn');
+    jkBtn.addEventListener("click", function(){
+        Swal.fire('Just Kidding. \n \n This is a working calculator on Node JS environment. \n \n It can handle multiple operations within the same line. \n \n This works only with input via mouse.')
+    });
+})
+
 let op = (x) => {
     operation += x;
     let display = document.querySelector('.display');
