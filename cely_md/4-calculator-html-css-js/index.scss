@@ -1,0 +1,68 @@
+$color-operator: #1b7f79;
+$color-operator-hover: #145e59;
+$color-operator-active: #0d3c39;
+
+$color-number: #00ccc0;
+$color-number-hover: #01998f;
+$color-number-active: #026962;
+
+$color-extra: #d96941;
+$color-extra-hover: #a34f31;
+$color-extra-active: #64311e;
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+#calculator {
+  width: 17rem;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+
+  &.double {
+    width: 8rem;
+  }
+
+  &.operator {
+    background-color: $color-operator;
+
+    &:hover {
+      background-color: $color-operator-hover;
+    }
+
+    &:active {
+      background-color: $color-operator-active;
+    }
+  }
+
+  &.number {
+    background-color: $color-number;
+
+    &:hover {
+      background-color: $color-number-hover;
+    }
+
+    &:active {
+      background-color: $color-number-active;
+    }
+  }
+
+  &.extra {
+    background-color: $color-extra;
+
+    &:hover {
+      background-color: $color-extra-hover;
+    }
+
+    &:active {
+      background-color: $color-extra-active;
+    }
+  }
+}
