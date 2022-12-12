@@ -1,11 +1,3 @@
-### I calculate that you must calculate a calculator code 🧮
-Choose one of them!
-- Scientific Calculator
-- Simple Calculator
+<h1>Simple calculator with themes</h1>
 
-Remember connect:
-- HTML to <script> Javascript
-- HTML to <styles> CSS
-
-From document you can control everything
-- [HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+<p>This is a basic calculator I made, there are two of them cause I am planing on made a second cientific calculator below the firts one, all made with JS, CSS and HTML</p>
