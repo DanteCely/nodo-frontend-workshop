@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
       '@i18n': path.resolve(__dirname, './src/i18n'),
+      '@assets': path.resolve(__dirname, './src/assets'),
     },
   },
   plugins: [react()],

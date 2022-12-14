@@ -1,3 +1,3 @@
-export * from './HeaderGame';
-export * from './FooterGame';
-export * from './MemoryGame';
+export * from './HeaderGame/HeaderGame';
+export * from './FooterGame/FooterGame';
+export * from './MemoryGame/MemoryGame';

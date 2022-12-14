@@ -1,0 +1,22 @@
+.footer-game {
+  display: flex;
+  font-size: $font-size-sm;
+  justify-content: space-around;
+  align-items: center;
+  background-color: color-intensity($color--green, 800);
+  color: $color--white;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+
+  &__version {
+    display: inherit;
+    align-items: inherit;
+
+    a {
+      margin: 0.5rem;
+    }
+  }
+}

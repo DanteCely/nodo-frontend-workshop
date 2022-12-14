@@ -32,6 +32,66 @@ $colors: map-merge(
   $colors
 );
 
+@function color-intensity($base-color, $intensity) {
+  $result: $base-color;
+
+  @if $intensity == 100 {
+    $result: lighten($base-color, $color--interval * 4);
+  } @else if $intensity == 200 {
+    $result: lighten($base-color, $color--interval * 3);
+  } @else if $intensity == 300 {
+    $result: lighten($base-color, $color--interval * 2);
+  } @else if$intensity == 400 {
+    $result: lighten($base-color, $color--interval);
+  } @else if$intensity == 500 {
+    $result: $base-color;
+  } @else if$intensity == 600 {
+    $result: darken($base-color, $color--interval);
+  } @else if$intensity == 700 {
+    $result: darken($base-color, $color--interval * 2);
+  } @else if$intensity == 800 {
+    $result: darken($base-color, $color--interval * 3);
+  } @else if$intensity == 900 {
+    $result: darken($base-color, $color--interval * 4);
+  } @else {
+    @error "Unknown intensity #{$intensity}.";
+  }
+
+  @return $result;
+}
+
+@each $key, $value in $colors {
+  .bg--#{$key} {
+    &-100 {
+      background-color: lighten($value, $color--interval * 4);
+    }
+    &-200 {
+      background-color: lighten($value, $color--interval * 3);
+    }
+    &-300 {
+      background-color: lighten($value, $color--interval * 2);
+    }
+    &-400 {
+      background-color: lighten($value, $color--interval);
+    }
+    &-500 {
+      background-color: $value;
+    }
+    &-600 {
+      background-color: darken($value, $color--interval);
+    }
+    &-700 {
+      background-color: darken($value, $color--interval * 2);
+    }
+    &-800 {
+      background-color: darken($value, $color--interval * 3);
+    }
+    &-900 {
+      background-color: darken($value, $color--interval * 4);
+    }
+  }
+}
+
 // Example: Deploy as background (bg) color utility classes
 
 @each $key, $value in $colors {
@@ -66,34 +126,4 @@ $colors: map-merge(
   }
 }
 
-@each $key, $value in $colors {
-  .color--#{$key} {
-    &-100 {
-      background-color: lighten($value, $color--interval * 4);
-    }
-    &-200 {
-      background-color: lighten($value, $color--interval * 3);
-    }
-    &-300 {
-      background-color: lighten($value, $color--interval * 2);
-    }
-    &-400 {
-      background-color: lighten($value, $color--interval);
-    }
-    &-500 {
-      background-color: $value;
-    }
-    &-600 {
-      background-color: darken($value, $color--interval);
-    }
-    &-700 {
-      background-color: darken($value, $color--interval * 2);
-    }
-    &-800 {
-      background-color: darken($value, $color--interval * 3);
-    }
-    &-900 {
-      background-color: darken($value, $color--interval * 4);
-    }
-  }
-}
+$footer-height: 5rem;

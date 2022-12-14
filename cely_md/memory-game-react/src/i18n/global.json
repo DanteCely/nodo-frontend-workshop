@@ -1,3 +1,6 @@
 {
-  "TITLE": "Juego de memoria"
+  "TITLE_APP": "Juego de memoria",
+  "YEAR_CREATION": "2023",
+  "COPYRIGHT": "Copyright © $YEAR_CREATION $TITLE_APP All rights reserved",
+  "GAME_VERSION": "Version $VERSION"
 }
