@@ -1,0 +1,17 @@
+{
+  "levels": [
+    {
+      "id": "4",
+      "width": 4,
+      "height": 3
+    },
+    {
+      "width": 4,
+      "height": 4
+    },
+    {
+      "width": 5,
+      "height": 4
+    }
+  ]
+}

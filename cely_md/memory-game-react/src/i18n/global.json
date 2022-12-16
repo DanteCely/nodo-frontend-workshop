@@ -1,6 +1,7 @@
 {
   "TITLE_APP": "Juego de memoria",
-  "YEAR_CREATION": "2023",
+  "YEAR_CREATION": "2026",
   "COPYRIGHT": "Copyright © $YEAR_CREATION $TITLE_APP All rights reserved",
-  "GAME_VERSION": "Version $VERSION"
+  "GAME_VERSION": "Version $VERSION",
+  "LEVEL": "Level:"
 }

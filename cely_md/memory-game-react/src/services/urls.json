@@ -1,0 +1,8 @@
+{
+  "levels": {
+    "url": "/data/levels.json",
+    "options": {
+      "method": "GET"
+    }
+  }
+}

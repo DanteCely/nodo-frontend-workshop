@@ -1,4 +1,3 @@
-import React, { useMemo } from 'react';
 import i18n from '@i18n';
 import clsx from 'clsx';
 import pkg from '../../../../package.json';

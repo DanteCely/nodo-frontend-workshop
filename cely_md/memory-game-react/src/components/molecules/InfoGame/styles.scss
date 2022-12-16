@@ -1,0 +1,13 @@
+.info-game {
+  display: flex;
+  background-color: color-intensity($color--gray, 200);
+
+  * {
+    margin-block: 1rem;
+    margin-inline: 0.5rem;
+
+    &:first-child {
+      margin-left: 1rem;
+    }
+  }
+}

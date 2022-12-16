@@ -1,3 +1,3 @@
-import * from './Level/Level';
-import * from './InfoGame/InfoGame';
-import * from './Board/Board';
+export * from './Level/Level';
+export * from './InfoGame/InfoGame';
+export * from './Board/Board';

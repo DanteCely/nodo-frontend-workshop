@@ -1,0 +1,18 @@
+.radio-buttons {
+  display: flex;
+
+  label {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background-color: color-intensity($color--teal, 400);
+    cursor: pointer;
+
+    &:hover {
+      background-color: color-intensity($color--teal, 100);
+    }
+  }
+
+  input[type='radio']:checked + label {
+    background-color: red;
+  }
+}
