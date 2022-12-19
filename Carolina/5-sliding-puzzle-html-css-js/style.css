@@ -1,0 +1,16 @@
+
+#tablero{
+    width: 368px;
+    height: 368px;
+    background-color: rgb(83, 75, 70);
+    border: 10px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 88px;
+    height: 88px;
+    margin: 2px;
+}
