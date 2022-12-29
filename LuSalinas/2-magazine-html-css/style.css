@@ -1,0 +1,103 @@
+
+html {
+    background-color: black;
+    background-image: url(./Assests/frame\ old\ heart\ 2.png);
+    width:"884"; height: "1280";
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-image: url(./Assests/old\ heart.png);
+    background-size: contain;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 53px;
+    text-align: center;
+    -webkit-text-fill-color: white;
+     
+}
+
+.date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: 100;
+    -webkit-text-fill-color: #f0f8ffeb;
+}
+
+.name {
+    font-size: x-large;
+    position: relative;
+    top: -23px;
+    line-height: 35px;
+}
+
+.izquierdo {
+    text-align: center;
+    position: relative;
+    top: 248px;
+    left: -170px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+    
+.line {
+    width: 5px;
+    height: 80px;
+    background-color: yellow;
+    position: relative;
+    left: 260px;
+    top: 170px;
+}
+
+.medio {
+    text-align: center;
+    position: relative;
+    top: 85px;
+    left: -0px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.Derecha {
+    text-align: center;
+    position: relative;
+    top: -80px;
+    left: 170px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.p {
+    text-align: center;
+    position: relative;
+    top: 235px;
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h1 {
+    position: relative;
+    top: 255px;
+}
+
+.h3 {
+    position: relative;
+    top: 280px;
+    font-size: large;
+    -webkit-text-fill-color: red;
+}
+
+.line2 {
+    width: 5px;
+    height: 80px;
+    background-color: yellow;
+    position: relative;
+    left: 420px;
+    top: 5px;
+}
+
+
+
+
