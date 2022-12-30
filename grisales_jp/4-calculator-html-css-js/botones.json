@@ -1,0 +1,110 @@
+[
+    {
+        "content": "C",
+        "color": "DarkSalmon",
+        "horizontal": 2,
+        "vertical": 1
+    },
+    {
+        "content": "←",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "÷",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "7",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "8",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "9",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "×",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "4",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "5",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "6",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "-",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "1",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "2",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "3",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "+",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": ".",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "0",
+        "color": "Silver",
+        "horizontal": 1,
+        "vertical": 1
+    },
+    {
+        "content": "=",
+        "color": "green",
+        "horizontal": 2,
+        "vertical": 1
+    }
+]

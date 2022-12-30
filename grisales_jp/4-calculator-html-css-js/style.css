@@ -1,0 +1,11 @@
+#calculadora {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    transition: background-color 2s linear 1s;
+}
+
+#calculadora:hover{
+    background-color: lightskyblue;
+    transition: background-color 2s linear 1s;
+}
