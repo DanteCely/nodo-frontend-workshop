@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Item } from './item';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'todo';
 
-  filter: 'all' | 'active' | 'done' = 'all';
+  filter: 'all' | 'active' | 'done' = 'all';  //Default is 'all' but can be the others.
 
   allItems = [
-    { description: 'eat', done: true },
-    { description: 'sleep', done: false },
-    { description: 'play', done: false },
-    { description: 'laugh', done: false },
+    { description: 'Eat', done: true },
+    { description: 'Sleep', done: false },
+    { description: 'Play', done: false },
+    { description: 'Laugh', done: false },
   ];
 
   get items(){
@@ -29,5 +30,9 @@ export class AppComponent {
       description,
       done: false
     });
+  }
+
+  remove(item: Item){
+    this.allItems.splice(this.allItems.indexOf(item), 1);
   }
 }

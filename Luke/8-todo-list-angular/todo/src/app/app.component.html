@@ -11,7 +11,37 @@
   
   <button class="btn-primary" (click)="addItem(newItem.value)">Add</button>
 
+  <!-- Buttons that show all, still to do, or done items on click -->
+  <div class="btn-wrapper">
+    <button
+      class="btn btn-menu"
+      [class.active]="filter == 'all'"
+      (click)="filter = 'all'">
+      All
+    </button> <!--[class.active], applies the active class when the value of filter matches the expression.-->
+
+    <button
+      class="btn btn-menu"
+      [class.active]="filter == 'active'"
+      (click)="filter = 'active'">
+      To Do
+    </button>
+
+    <button
+      class="btn btn-menu"
+      [class.active]="filter == 'done'"
+      (click)="filter = 'done'">
+      Done
+    </button>
+  </div>
+
+
+  <h2>{{items.length}} <span *ngIf="items.length === 1; else elseBlock">item</span>
+  <ng-template #elseBlock>items</ng-template></h2>  <!--You can use Angular's <ng-template> when you don't want content to render by default.-->
+
   <ul>
-    <li *ngFor="let item of items">{{item.description}}</li>
+    <li *ngFor="let i of items">
+      <app-item (remove)="remove(i)" [item]="i"></app-item>  <!--The item property in the square brackets, [], binds the value of i between the AppComponent and the ItemComponent-->
+    </li>
   </ul>
 </div>
