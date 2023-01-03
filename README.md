@@ -1,29 +1,29 @@
 # nodo-frontend-workshop
+
 It is a collection of workshops to learn frontend topics. 🧑‍💻🎨
 
-1. First at all, the developer needs to create its own develop branch:
+1. THe developer must to go to the develop branch: `git checkout develop`
+2. Copy the folder [your folder name] and then replace by your alias user
+3. Push the new changes:
 
-  For example:
-  - john_doe@mail.com: *develop__doe-john*
-  - Jane Doe: *develop__doe-jane*
+- `git add .`
+- `git commit -m "feat: Add new folder [your folder name]"`
+- `git push`
 
+4. The developer can to create its own feature branch: `git checkout -b "develop__doe-john"`
+   For example:
 
-From the **main** branch put the next command: `git checkout -b "develop__doe-john"`
+- feature/html-form-a11y\_\_doe-jane
+- feature/css-magazine-cover\_\_doe-john
 
-2. After that, each developer have to create their own folder and add `.gitkeep` file:
+5. Push ypur new branch `git push`
 
-For example:
-- John Doe: *doe_john/.gitkeep*
-- Jane Doe: *doe_jane/.gitkeep*
-
-Then the developer add and commit the changes:
-
-`git add . && git commit -m "feat: Add new features"` or `git checkout -b "develop__doe-john"`
+6. Enjoy the develop!!!
 
 ```mermaid
     gitGraph
        commit
-       branch develop__doe-john
+       branch develop
        commit
        commit
        branch feature/css-magazine-cover__doe-john

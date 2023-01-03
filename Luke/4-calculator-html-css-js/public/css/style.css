@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+@font-face {
+    font-family: Calculator;
+    src: url(../fonts/Calculator.ttf);
+}
+body{
+    margin-top: 70px;
+}
+#jk-btn{
+    margin: 40px auto 20px;
+    width: 200px;
+    height: 40px;
+}
+#jk-btn:hover{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+.calculator{
+    width: 300px;
+    height: 350px;
+    margin: 5% auto;
+    border-radius: 5%;
+    background-color: darkgrey;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    box-shadow: 3px 3px 3px;
+}
+.display{
+    height: 40px;
+    width: 80%;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-align: right;
+    box-shadow: 3px 3px 3px black;
+}
+.display, button, h1, h2{
+    font-family: Calculator, serif;
+    font-size: 150%;
+}
+h1{
+    font-size: 200%;
+}
+.buttons-container{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 40px 40px 40px 40px 40px ;
+    border: 2px solid darkgrey;
+    margin: 10% auto;
+    justify-content: center;
+}
+.buttons-container div{
+    color: black;
+    border: 1px solid black;
+}
+#result{
+    grid-column: 4;
+    grid-row: 3 / span 4;
+    background-color: rgb(237, 154, 66);
+}
+button{
+    box-shadow: 1px 1px 3px;
+}
+button:hover{
+    background-color: antiquewhite;
+}
+#result:hover{
+    background-color: rgba(255, 0, 0, 0.902);
+}
