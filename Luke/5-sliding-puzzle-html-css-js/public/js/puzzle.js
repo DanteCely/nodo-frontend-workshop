@@ -33,17 +33,49 @@ window.onload = function(){
 }
 
 //  FUNCTIONS 
-dragStart = () => {
+function dragStart(){
   currentTile = this;   //This refers to the img tile being dragged;
 }
-dragOver = (e) => {
+function dragOver(e){
   e.preventDefault();
 }
-dragEnter = (e) => {
+function dragEnter(e){
   e.preventDefault();
 }
-dragLeave = (e) => {
+function dragLeave(e){
 }
-dragDrop = () => {
+function dragDrop(){
   otherTile = this; //This referes to the img tile being dropped on
+}
+function dragEnd(){
+  if(!otherTile.src.includes("3.jpg")){
+    return;   //If the otherTile is not the blank one, return and stop the execution.
+  }
+
+  let currentCoords = currentTile.id.split("-");   //e.g "0-0" => ["0", "0"];
+  let r = parseInt(currentCoords[0]);
+  let c = parseInt(currentCoords[1]);
+
+  let otherCoords = otherTile.id.split("-");
+  let r2 = parseInt(otherCoords[0]);
+  let c2 = parseInt(otherCoords[1]);
+
+  let moveLeft = r == r2 && c2 == c-1;
+  let moveRight = r == r2 && c2 == c+1;
+
+  let moveUp = c == c2 && r2 == r-1;
+  let moveDown = c == c2 && r2 == r+1;
+
+  let isAdjacent = moveLeft || moveRight || moveUp || moveDown;
+  
+  if(isAdjacent){
+    let currentImg = currentTile.src;
+    let otherImg = otherTile.src;
+  
+    currentTile.src = otherImg;
+    otherTile.src = currentImg;
+
+    turns += 1;
+    document.getElementById("turns").innerText = turns;
+  }
 }
