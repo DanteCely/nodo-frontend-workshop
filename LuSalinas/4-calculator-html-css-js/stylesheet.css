@@ -44,7 +44,7 @@ button:focus {
     outline: none;
 }
 
-.colnumero {
+.col-2 {
     grid-column: span 2;
 }
 
