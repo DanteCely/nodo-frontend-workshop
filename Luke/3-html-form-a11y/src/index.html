@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/044c3f9b87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/normalize.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Night's Watch Enrollment</title>
+</head>
+<body>
+    <header>
+        <div class="header-img-container">
+            <a class="go-to-top" href="#top">
+                <img class="nwlogo" src="../public/images/nwlogo.png" alt="Night's Watch logo">
+            </a>
+        </div>
+        <h1>Night's Watch Application form</h1>
+        <a class="go-to-form" href="#info">
+            To Form
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </header>
+    <main>
+        <div class="nwvow-container">
+            <img id="nwvow" class="nwvow" src="../public/images/NWVow.webp" alt="Vow of the Nigh's Watch">
+        </div>
+        <div class="info-container" id="info">
+            <h2>Welcome to Night Watch Application's job application form</h2>
+            <h3>Answer this questions and we will decide if you are worth to become a <strike>disposable</strike> soldier</h3>
+        </div>
+        <form id="form" action="./sent.html" method="get">
+            <fieldset class="questions personal-questions">
+                <legend><h4>Who are you?</h4></legend>
+                    <label>We shall call you ...
+                        <input type="text" name="name" id="name" placeholder="What's your name?">
+                    </label>
+                    <label>Of House ...
+                        <input type="text" name="lastName" id="lastName" placeholder="What's your last name?">
+                    </label>
+                    <label>Crow nest, for letters:
+                        <input type="email" name="email" id="email" placeholder="What's your e-mail?">
+                    </label>
+                    <label>Communication contact table:
+                        <input type="tel" name="phone" id="phone" placeholder="What's your phone number?">
+                    </label>
+                    <label>First nameday:
+                        <input type="date" name="bday" id="bday">
+                    </label>
+            </fieldset>
+
+            <fieldset class="questions background-questions">
+                <legend><h4>What should we know about you?</h4></legend>
+                <label>What do you currently perform?
+                    <input type="text" name="occupation" id="occupation" placeholder="What's your occupation">
+                </label>
+                <div class="prevPerform-container">
+                    <p>Have you performed in something else?</p>
+                        <label>
+                    <input type="radio" id="noPreviousOccupation" name="previousOccupation">
+                        No</label>
+                        <label>
+                    <input type="radio" id="yesPreviousOccupation" name="previousOccupation">
+                        Yes</label>
+                    <label>If yes, what?
+                        <input type="text" name="additionalOccupation" id="additionalOccupation" placeholder="Do not asnwer if No">
+                    </label>
+                </div>
+                <label for="prevFunctions">In your previous occupations, what were some of your functions?</label>
+                    <textarea name="prevFunctions" id="prevFunctions" cols="40" rows="5"></textarea>
+                <label>The lord you reported your doings to was...
+                    <input type="text" name="prevEmployer" id="prevEmployer" placeholder="Previous employer">
+                </label>
+            </fieldset>
+            <fieldset class="questions interests-questions">
+                <legend><h4>What skills do you intend to learn by joining us? (You can select several)</h4></legend>
+                <label><input type="checkbox" name="skills" id="survival" checked required>Survival</label>
+                <label><input type="checkbox" name="skills" id="swordmanship">Swordmanship</label>
+                <label><input type="checkbox" name="skills" id="archery">Archery</label>
+                <label><input type="checkbox" name="skills" id="smithing">Smithing</label>
+                <label><input type="checkbox" name="skills" id="hunting">Hunting</label>
+                <label><input type="checkbox" name="skills" id="skinning">Skinning</label>
+                <label><input type="checkbox" name="skills" id="housechores">House Chores</label>
+                <label><input type="checkbox" name="skills" id="lumberjack">Lumberjack</label>
+            </fieldset>
+            <fieldset class="questions affinity-questions">
+                <legend><h4>Which of the Great Houses are you aligned with?</h4></legend>
+                <label for="aligned-house">
+                    <select name="aligned-house" id="aligned-house" required>
+                        <option value="none" disabled selected>Select one</option>
+                        <option value="targaryen">House Targaryen of King's Landing</option>
+                        <option value="stark">House Stark of Winterfell</option>
+                        <option value="lannister">House Lannister of Casterly Rock</option>
+                        <option value="arryn">House Arryn of the Eyrie</option>
+                        <option value="tully">House Tully of Riverrun</option>
+                        <option value="greyjoy">House Greyjoy of Pyke</option>
+                        <option value="baratheon">House Baratheon of Storm's End</option>
+                        <option value="tyrell">House Tyrell of Highgarden</option>
+                        <option value="martell">House Martell of Sunspear</option>
+                </select>
+                </label>
+            </fieldset>
+            <fieldset class="questions final-question">
+                <legend><h4>Do you accept to obey your Lord Commander without any complain?</h4></legend>
+                <label>
+                    <input type="radio" name="accept-orders" id="accept-orders1">Yes
+                </label>
+                <label>
+                    <input type="radio" name="accept-orders" id="accept-orders2">Yes
+                </label>
+            </fieldset>
+            <div class="buttons-container">
+                <button type="reset">Withdraw</button>
+                <button type="submit">Submit application</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
