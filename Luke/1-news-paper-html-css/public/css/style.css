@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+}
+@font-face {
+    font-family: headoh;
+    src: url("/public/fonts/HEADOH__.TTF");
+}
+@font-face {
+    font-family: pinyonscript;
+    src: url("/public/fonts/PinyonScript-Regular.ttf");
+}
+
+body{
+    background-color: rgb(207, 194, 176);
+    /* text-align: center; */
+    padding: 10px;
+    margin: 5% auto;
+    position: relative;
+    border: #000 dashed 2px;
+    width: 653px;
+}
+.title{
+    font-family: headoh, serif;
+    font-size: 5em;
+    font-weight: lighter;
+    line-height: 98%;
+    margin: 0;
+    letter-spacing: -2px;
+    text-align: left;
+}
+    .underline{
+        text-decoration-line: underline;
+        text-decoration-thickness: 5px;
+    }
+    .first-line{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ford-img{
+        width: 45%;
+        padding: 0 10px;
+        margin-right: 20px;
+        height: 125px;
+    }
+.coupons-section{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 0 10px;
+}
+    .coupons-section *{
+        margin: 0;
+    }
+    .coupon1{
+        font-family: headoh, serif;
+        width: 65%;
+        font-size: 80%;
+        margin-top: 0;
+    }
+        .coupon1 h3{
+            font-size: 1.5em;
+            font-weight: lighter;
+        }
+        .coupon1 p{
+            font-size: 0.7em;
+        }
+    .coupon2{
+        font-size: 0.6em;
+        position: relative;
+        width: 35%;
+        padding-left: 7px;
+    }
+        .coupon2-title{
+            transform: scale(0.9, 1.5);
+            line-height: 90%;
+            padding-top: 10px;
+            width: 110%;
+            margin-left: -10px;
+        }
+        .bigger-text{
+            font-size: 130%;
+            font-weight: bolder;
+        }
+        #number-15{
+            position: absolute;
+            left: 125px;
+            top: -5px;
+            font-size: 4.5em;
+        }
+.text-section{
+    position: absolute;
+    text-align: center;
+    width: 22%;
+    top: 219px;
+    right: 86px;
+    font-size: 0.45em;
+}
+        .text-section *{
+        margin: 0;
+        text-transform: lowercase;
+        }
+        .text-title{
+            font-size: 120%;
+        }
+        .text{
+            font-family: pinyonscript, serif;
+            font-size: 130%;
+        }
+.aside-section{
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 485px;
+    right: -224px;
+    top: 222px;
+    justify-content: center;
+}
+    .aside-section i{
+        font-size: 3em;
+        transform: scale(1, 0.6);
+        
+    }
+    .aside-section *{
+        margin: 0;
+    }
+    .aside-section h5{
+        font-family: headoh, serif;
+        font-size: 1em;
+        padding: 4px 0;
+        width: 65%;
+        text-align: center;
+    }
+    .lowercase{
+        text-align: center;
+        width: 25%;
+        background-color: rgba(90, 90, 90, 0.295);
+    }
+        .lowercase *{
+            text-transform: lowercase;
+            font-size: 70%;
+        }
+        .bigger-text-aside{
+            margin: 0 -30px 0 20px;
+            text-transform: uppercase;
+            font-size: 130%;
+        }
+        .lowercase div{
+            display: flex;
+            justify-content: space-around;
+        }
+.black-background{
+    background-color: #000;
+    color: rgb(235, 229, 213);
+}
+hr{
+    border: rgb(70, 67, 67) 4px solid;
+    margin-bottom: 0;
+}
+
+@media (max-width: 653px){
+    body{
+        width: auto;
+        margin: 5%;
+    }
+    .title{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 4.5em;
+    }
+        .first-line{
+            justify-content: center;
+        }
+        #ford-img{
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+            max-width: 280px;
+            padding-left: 5px;
+        }
+    .text-section{
+        position: static;
+        margin: 10% auto;
+        width: 90%;
+        font-size: 150%;
+    }
+    .coupons-section{
+        margin: auto;
+        width: 85%;
+        font-size: 130%;
+    }
+        #number-15{
+            left: 90%;
+            top: -17%;
+        }
+    .aside-section{
+        transform: initial;
+        position: initial;
+        width: auto;;
+    }
+        .lowercase{
+            font-size: 125%;
+        }
+}
+@media (max-width: 540px){
+    hr{
+        margin: 5%;
+    }
+}
+@media (max-width: 480px){
+    .coupon i, #number-15{
+        display: none;
+    }
+    .aside-section{
+        display: block;
+        text-align: center;
+    }
+        .aside-section *{
+            margin: auto;
+        }
+    .title{
+        font-size: 300%;
+    }
+    #ford-img{
+        width: 20%;
+        min-width: 100px;
+        max-width: 140px;
+        height: auto;
+    }
+}
+@media (min-width:900px){
+    body{
+        width: 900px;
+    }
+    .title{
+        text-align: center;
+    }
+        .first-line{
+            justify-content: center;
+        }
+        #ford-img{
+            margin-left: 2%;
+            max-width: 500px;
+        }
+    .text-section{
+        position: initial;
+        width: 80%;
+        margin: auto;
+        font-size: 200%;
+        padding: 20px 0;
+    }
+    .coupons-section{
+        width: 90%;
+        margin: auto;
+    }
+        .coupon1{
+            font-size: 120%;
+        }
+        .coupon2{
+            font-size: 100%;
+        }
+        #number-15{
+            left: 190px;
+            top: -40px;
+        }
+    .aside-section{
+        width: 630px;
+        right: -295px;
+        top: 500px;
+    }
+    .lowercase{
+        font-size: 125%;
+    }
+}
