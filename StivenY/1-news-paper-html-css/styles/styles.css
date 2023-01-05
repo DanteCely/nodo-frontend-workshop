@@ -1,0 +1,43 @@
+body {
+  background-color:  var(--background-page);
+}
+
+h1{
+  font-size: var(--font-size-xl);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+h2{
+  text-align: center;
+  font-size: var(--font-size-xl);
+  margin: 0;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+}
+.dn{
+    font-size: var(--font-size-sm);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+article{
+  display: flex;
+  
+}
+
+.texto-izq{
+  display: flex;
+}
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,178 @@
+/* Mobile devices */
+:root {
+  /* Custom properties */
+  --color-primary: #181818;
+  --color-secondary: #f0f0f0;
+  --background-page: #DADADA;
+
+  /* Typographies */
+  --typography-title: 'Wilson Wells', 'Times New Roman', Times, serif;
+  --typography-primary: 'Old Standard TT', Helvetica, Arial, sans-serif;
+  --typography-secundary: 'M PLUS 1p', Verdana;
+
+  /* Font Sizes */
+  --font-size-sm: 1.6rem;
+  --font-size-md: 1.8rem;
+  --font-size-lg: 1.8;
+  --font-size-ulg: 2.4rem;
+  --font-size-xl: 2.6rem;
+  --font-size-xxl: 2.3rem;
+  --font-size-xxxl: 3.8rem;
+
+  /* width */
+  --news-paper-width: 100%;
+  /* height */
+  --news-paper-title-height: 6rem;
+
+  --news-paper-border: 0.5rem solid var(--color-primary);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #f0f0f0;
+    --color-secondary: #181818;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+} */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: black;
+    --color-secondary: white;
+  }
+
+  ::selection {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (prefers-reduced-animation: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}
+
+/**
+  320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV
+
+  Fuente: https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
+*/
+
+@media screen and (max-width: 480px) {
+  :root {
+    --news-paper-border: 0.3rem solid var(--color-primary);
+  }
+
+  article > section {
+    flex-direction: column-reverse;
+  }
+
+  /* section.pie-article {
+    flex-direction: column;
+  } */
+
+  article > section > aside.left-side,
+  .right-side section.pie-article > p {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  article > section > article.right-side,
+  .right-side section.pie-article > figure {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width: 481px) {
+  :root {
+    /* Font Sizes */
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-ulg: 2.1rem;
+    --font-size-xl: 1.9rem;
+    --font-size-xxl: 2.6rem;
+    --font-size-xxxl: 5.5rem;
+
+    /* width */
+    --news-paper-width: 76rem; /* TODO: Adjust Tablet & Mobile */
+    /* height */
+    --news-paper-title-height: 10rem;
+
+    --news-paper-border: 0.3rem solid var(--color-primary);
+  }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px) {
+  :root {
+    /* Font Sizes */
+    --font-size-sm: 1.6rem;
+    --font-size-md: 1.8rem;
+    --font-size-lg: 2.1rem;
+    --font-size-ulg: 2.4rem;
+    --font-size-xl: 3.2rem;
+    --font-size-xxl: 4rem;
+    --font-size-xxxl: 7.8rem;
+
+    /* width */
+    --news-paper-width: 76rem;
+    /* height */
+    --news-paper-title-height: 12rem;
+  }
+}
+
+/* Desktops, large screens */
+@media screen and (min-width: 1025px) {
+  :root {
+    /* Font Sizes */
+    --font-size-sm: 1.6rem;
+    --font-size-md: 1.8rem;
+    --font-size-lg: 3.6rem;
+    --font-size-ulg: 4.2rem;
+    --font-size-xl: 5.2rem;
+    --font-size-xxl: 6rem;
+    --font-size-xxxl: 11.8rem;
+
+    /* width */
+    --news-paper-width: 100rem;
+    /* height */
+    --news-paper-title-height: 16rem;
+  }
+}
+
+/* Desktops, large screens */
+@media screen and (min-width: 1201px) {
+  :root {
+    /* Font Sizes */
+    --font-size-sm: 1.6rem;
+    --font-size-md: 1.8rem;
+    --font-size-lg: 4.2rem;
+    --font-size-ulg: 4.8rem;
+    --font-size-xl: 6rem;
+    --font-size-xxl: 6.8rem;
+    --font-size-xxxl: 12.8rem;
+
+    /* width */
+    --news-paper-width: 112rem;
+    /* height */
+    --news-paper-title-height: 18rem;
+  }
+}
