@@ -1,11 +1,104 @@
-#calculadora {
-    width: 100vw;
-    height: 100vh;
-    background-color: lightblue;
-    transition: background-color 2s linear 1s;
+* {
+  margin: 0;
+  font-size: 62.5%;
 }
 
-#calculadora:hover{
-    background-color: lightskyblue;
-    transition: background-color 2s linear 1s;
+@font-face {
+  font-family: titular;
+  src: url(./DemoncubicblockfontBlack-Jpvx.ttf);
 }
+@font-face {
+  font-family: numero;
+  src: url(./Digital7-rg1mL.ttf);
+}
+header {
+  font-size: 6rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 0.1rem;
+  font-family: titular;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightblue;
+  transition: background-color 2s linear 1s;
+  position: absolute;
+}
+
+div#pantalla {
+  background-color: LightCyan;
+  height: 6rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-family: numero;
+  text-align: right;
+}
+
+section#calculadora {
+  width: 16rem;
+  background-color: black;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+main:hover {
+  background-color: lightskyblue;
+  transition: background-color 2s linear 1s;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+button.double {
+  width: 8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+button.operator {
+  background-color: Gray;
+}
+button.operator:hover {
+  background-color: DimGray;
+}
+button.operator:active {
+  background-color: LightGray;
+}
+button.number {
+  background-color: Silver;
+}
+button.number:hover {
+  background-color: DimGray;
+}
+button.number:active {
+  background-color: LightGray;
+}
+button.set {
+  background-color: DarkSalmon;
+}
+button.set:hover {
+  background-color: DarkRed;
+}
+button.set:active {
+  background-color: LightCoral;
+}
+button.equal {
+  background-color: Green;
+}
+button.equal:hover {
+  background-color: DarkGreen;
+}
+button.equal:active {
+  background-color: LightGreen;
+}
+
+/*# sourceMappingURL=style.css.map */

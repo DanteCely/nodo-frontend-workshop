@@ -1,110 +1,76 @@
 [
     {
         "content": "C",
-        "color": "DarkSalmon",
-        "horizontal": 2,
-        "vertical": 1
+        "type":"set",
+        "className":"double"
     },
     {
         "content": "←",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"set"
     },
     {
         "content": "÷",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"operator"
     },
     {
         "content": "7",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "8",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "9",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "×",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"operator"
     },
     {
         "content": "4",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "5",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "6",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "-",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"operator"
     },
     {
         "content": "1",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "2",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "3",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "+",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"operator"
     },
     {
         "content": ".",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"operator"
     },
     {
         "content": "0",
-        "color": "Silver",
-        "horizontal": 1,
-        "vertical": 1
+        "type":"number"
     },
     {
         "content": "=",
-        "color": "green",
-        "horizontal": 2,
-        "vertical": 1
+        "type":"equal",
+        "className":"double"
     }
 ]

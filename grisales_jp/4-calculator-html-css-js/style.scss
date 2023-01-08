@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    font-size: 62.5%;
+}
+$color-operator: Gray;
+$color-operator-hover: DimGray;
+$color-operator-active: LightGray;
+$color-number: Silver;
+$color-number-hover: DimGray;
+$color-number-active: LightGray;
+$color-set: DarkSalmon;
+$color-set-hover: DarkRed;
+$color-set-active: LightCoral;
+$color-equal: Green;
+$color-equal-hover: DarkGreen;
+$color-equal-active: LightGreen;
+$color-result: LightCyan;
+@font-face {
+    font-family: titular;
+    src: url(./DemoncubicblockfontBlack-Jpvx.ttf);
+}
+@font-face {
+    font-family: numero;
+    src: url(./Digital7-rg1mL.ttf);
+}
+header{
+    font-size: 6rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 0.1rem;
+    font-family: titular;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    transition: background-color 2s linear 1s;position: absolute;
+}
+div#pantalla{
+    background-color: $color-result ;
+    height: 6rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-family: numero;
+    text-align: right;
+}
+section#calculadora {
+    width: 16rem;
+    background-color: black;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+main:hover{
+    background-color: lightskyblue;
+    transition: background-color 2s linear 1s;
+}
+button {
+    border: none;
+    border-radius: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &.double {
+        width: 8rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    &.operator {
+        background-color: $color-operator;
+        &:hover {
+            background-color: $color-operator-hover;
+        }
+        &:active {
+            background-color: $color-operator-active;
+        }
+    }
+    &.number {
+        background-color: $color-number;
+        &:hover {
+            background-color: $color-number-hover;
+        }
+        &:active {
+            background-color: $color-number-active;
+        }
+    }
+    &.set {
+        background-color: $color-set;
+        &:hover {
+            background-color: $color-set-hover;
+        }
+        &:active {
+            background-color: $color-set-active;
+        }
+    }
+    &.equal {
+        background-color: $color-equal;
+        &:hover {
+            background-color: $color-equal-hover;
+        }
+        &:active {
+            background-color: $color-equal-active;
+        }
+    }
+}
+
+
+
