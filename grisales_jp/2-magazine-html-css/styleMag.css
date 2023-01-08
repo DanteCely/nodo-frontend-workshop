@@ -12,8 +12,8 @@
 }
 body {
     background: linear-gradient(to bottom, rgb(224, 216, 216), rgb(114, 111, 111));
-    width: 100vw;
-    height: 100vh;
+    width: 45rem;
+    height: 62.5rem;
     margin: 0%;
     display: flex;
     justify-content: space-between;
