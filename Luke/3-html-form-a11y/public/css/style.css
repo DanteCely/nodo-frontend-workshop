@@ -1,0 +1,80 @@
+@font-face {
+    font-family: OldLondon;
+    src: url(../fonts/old_london/OldLondon.ttf);
+}
+@font-face {
+    font-family: EnchantedLand;
+    src: url(../fonts/enchanted_land/Enchanted\ Land.otf);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: EnchantedLand, serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: OldLondon, serif;
+    font-size: 170%;
+    margin: 20px 0 10px;
+}
+html{
+    background-color: rgb(212, 212, 212);
+}
+header{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 150%;
+        line-height: 15px;
+    }
+body{
+    min-width: 385px;
+}
+    h1{
+        margin: 0 5%;
+        font-size: 2.5em;
+    }
+    .header-img-container{
+        width: 30%;
+        max-width: 110px;
+    }
+.nwvow, .nwlogo{
+    width: 100%;
+}
+main{
+    padding-top: 115px;
+    padding-bottom: 100px;
+}
+form, .info-container{
+    width: 90%;
+    margin: auto;
+}
+    label, .prevPerform-container p{
+        font-size: 150%;
+        display: block;
+        margin: 10px 0;
+    }
+    fieldset{
+        padding-left: 2em;
+    }
+
+button{
+    font-size: 130%;
+    margin: 25px 15px 15px;
+}
+
+#sent-application{
+    text-align: center;
+    width: 100%;
+    margin: 20% auto;
+    font-size: 500%;
+}

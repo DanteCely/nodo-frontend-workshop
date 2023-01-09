@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: darkblue;
+}
+#title{
+  width: 20%;
+  margin: auto;
+}
+#board{
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  background-color: lightgray;
+  border: 3px solid darkblue;
+
+  /*  Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#board img {
+  width: 198px;
+  height: 198px;
+  border: 1px solid darkblue;
+}

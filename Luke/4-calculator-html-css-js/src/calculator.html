@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script src="../public/js/calculator.js"></script>
+    <title>Luke's Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Luke's Calculator</h1>
+        <h2>It's a calculator, what instructions do you expect to find?</h2>
+    </header>
+    <main>
+        <div class="calculator">
+            <div class="display">
+                0
+            </div>
+            <div class="buttons-container">
+                <button id="clear" onclick="erase()">AC</button>
+                <button id="division" onclick="op(' / ')">&divide;</button>
+                <button id="multiplication" onclick="op(' * ')">&times;</button>
+                <button id="addition" onclick="op(' + ')">&plus;</button>
+                <button id="7" onclick="op('7')">7</button>
+                <button id="8" onclick="op('8')">8</button>
+                <button id="9" onclick="op('9')">9</button>
+                <button id="subtraction" onclick="op(' - ')">&minus;</button>
+                <button id="result" onclick="result()">&equals;</button>
+                <button id="4" onclick="op('4')">4</button>
+                <button id="5" onclick="op('5')">5</button>
+                <button id="6" onclick="op('6')">6</button>
+                <!--<button id="delete">←</button>-->
+                <button id="1" onclick="op('1')">1</button>
+                <button id="2" onclick="op('2')">2</button>
+                <button id="3" onclick="op('3')">3</button>
+                <button id="0" onclick="op('0')">0</button>
+                <button id="00" onclick="op('00')">00</button>
+                <button id="decimal" onclick="op('.')">.</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
