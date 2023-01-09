@@ -1,8 +1,8 @@
 let rows = 3;
 let columns = 3;
 
-let currentTile;
-let otherTile;  //blank
+let currentSpace;
+let otherBlank;  //blank
 
 let turns = 0;
 
@@ -18,11 +18,11 @@ window.onload = function(){
       tile.src = "./Assests/" + imgOrder.shift() + ".png"; 
       
       //DRAGSTART
-      tile.addEventListener("inicio", inicio); //movimiento inicial
-      tile.addEventListener("sobreimagen", sobreimagen);  //imagen en movimiento
-      tile.addEventListener("imagenswap", imagenswap);  //imagen swap otra imagen
-      tile.addEventListener("imagendejar", imagendejar);  //dejando la imagen sobre otra
-      tile.addEventListener("dejar", dejar);  //dejando la imagen
+      tile.addEventListener("First", First); //movimiento inicial
+      tile.addEventListener("overimage", overimage);  //imagen en movimiento
+      tile.addEventListener("imgswap", imgswap);  //imagen swap otra imagen
+      tile.addEventListener("imgleave", imgleave);  //dejando la imagen sobre otra
+      tile.addEventListener("leave", leave);  //dejando la imagen
       tile.addEventListener("final", final);//movimientofinal
 
 
@@ -33,30 +33,30 @@ window.onload = function(){
 }
 
 //  FUNCTIONS 
-function inicio(){
-  currentTile = this;   //This refers to the img tile being dragged;
+function First(){
+  currentSpace = this;   //This refers to the img tile being dragged;
 }
-function sobreimagen(e){
+function overimage(e){
   e.preventDefault();
 }
-function imagenswap(e){
+function imgswap(e){
   e.preventDefault();
 }
-function imagendejar(e){
+function imgleave(e){
 }
-function dejar(){
-  otherTile = this; //This referes to the img tile being dropped on
+function leave(){
+  otherBlank = this; //This referes to the img tile being dropped on
 }
 function final(){
-  if(!otherTile.src.includes("9.png")){
+  if(!otherBlank.src.includes("9.png")){
     return;   //sino es la imagen blanca no retorna nada
   }
 
-  let currentCoords = currentTile.id.split("-");   //e.g "0-0" => ["0", "0"];
+  let currentCoords = currentSpace.id.split("-");   //e.g "0-0" => ["0", "0"];
   let r = parseInt(currentCoords[0]);
   let c = parseInt(currentCoords[1]);
 
-  let otherCoords = otherTile.id.split("-");
+  let otherCoords = otherBlank.id.split("-");
   let r2 = parseInt(otherCoords[0]);
   let c2 = parseInt(otherCoords[1]);
 
@@ -69,11 +69,11 @@ function final(){
   let isAdjacent = moveLeft || moveRight || moveUp || moveDown;
   
   if(isAdjacent){
-    let currentImg = currentTile.src;
-    let otherImg = otherTile.src;
+    let currentImg = currentSpace.src;
+    let otherImg = otherBlank.src;
   
-    currentTile.src = otherImg;
-    otherTile.src = currentImg;
+    currentSpace.src = otherImg;
+    otherBlank.src = currentImg;
 
     turns += 1;
     document.getElementById("turns").innerText = turns;
