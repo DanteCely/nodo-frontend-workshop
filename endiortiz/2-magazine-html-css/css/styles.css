@@ -1,0 +1,11 @@
+:root {
+    --white: #FFFFFF;
+    --dark-yellow: #FFD74E;
+    --sm: 12px;
+    --md: 20px;
+    --lg: 30px;
+}
+body {
+    background-image: url(../images/julioCesar.jpg);
+    background-repeat: no-repeat;
+}
