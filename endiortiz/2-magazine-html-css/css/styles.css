@@ -1,6 +1,8 @@
 :root {
     --white: #FFFFFF;
     --dark-yellow: #FFD74E;
+    --yellowred: #F5665B;
+    --vs: 0.8vw;
     --sm: 1.5vw;
     --md: 2.8vw;
     --lg: 22vw;
@@ -39,6 +41,7 @@ body {
     color: var(--white);
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 400;
+    line-height: 0.8;
 }
 .content-container__subtitles--title {
     font-size: var(--lg);
@@ -56,10 +59,12 @@ body {
 .content-container__subtitles--left1 {
     grid-column: 1/2;
     grid-row: 4/5;
+    padding-top: 1em;
 }
 .content-container__subtitles--left2 {
     grid-column: 1/2;
     grid-row: 5/6;
+    padding-top: 0.5em;
 }
 .content-container__subtitles--left3 {
     grid-column: 1/2;
@@ -73,7 +78,6 @@ body {
 .content-container__subtitles--right {
     grid-column: 5/6;
     grid-row: 7/8;
-    padding-right: 1em;
 }
 .content-container__subtitles--yellow {
     color: var(--dark-yellow);
@@ -86,4 +90,36 @@ body {
 }
 .content-container__subtitles--paddingleft {
     padding-left: 1em;
+}
+.content-container__subtitles--paddingright {
+    padding-right: 1em;
+}
+.info {
+    grid-column: 5/6;
+    grid-row: 3/4;
+    font-size: var(--vs);
+    padding-right: 8em;
+}
+.info__text--lowercase {
+    text-transform: lowercase;
+    text-align: right;
+}
+.info__text--italic {
+    font-style: italic;
+    text-align: right;
+}
+.magazine-label {
+    max-width: 1em;
+    grid-column: 5/6;
+    grid-row: 8/9;
+    justify-self: end;
+    margin-right: 1em;
+}
+.content-container__subtitles--source {
+    grid-column: 5/6;
+    grid-row: 5/6;
+    line-height: 1;
+}
+.yellowred {
+    color: var(--yellowred);
 }
