@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Magazine</title>
 </head>
-<body>
-    <main class="content-container">
-        <h1 class="content-container__title">Historia</h1>
-        <img class="logo" src="" alt="Logo de Natgeo">
-        <section class="content-container__subtitles">
-            <div class="content-container__subtitles content-container__subtitles--left">
-                <article>
-                    <h2>Cómo se escribió la biblia</h2>
-                </article>
-                <article>
-                    <h2 class="content-container__subtitles content-container__subtitles--yellow">La edad de oro de los vikingos</h2>
-                </article>
-                <article>
-                    <h2>El corazón del imperio azteca</h2>
-                    <p class="content-container__subtitles content-container__subtitles--yellow"></p>>El templo mayor de Tenochtitlán</p>
-                </article>
-                <article>
-                    <h2>Julio César</h2>
-                    <p>La vida privada del hombre más poderoso de Roma</p>
-                </article>
-            </div>
-            <div class="content-container__subtitles content-container__subtitles--right">
-                <article>
-                    <h2>Esparta</h2>
-                    <p>Admirada, temida y detestada</p>
-                </article>
-            </div>
-        </section>
-    </main>
+<body class="content-container__subtitles content-container__subtitles--grid">
+        <h1 class="content-container__subtitles content-container__subtitles--title">Historia</h1>
+        <img class="logo content-container__subtitles--paddingleft" src="./images/logoNatgeo.png" alt="Logo de Natgeo">
+        <div class="content-container__subtitles content-container__subtitles--left1 content-container__subtitles--paddingleft">
+            <article>
+                <h2>Cómo se escribió la biblia</h2>
+            </article>
+        </div>
+        <div class="content-container__subtitles content-container__subtitles--left2 content-container__subtitles--paddingleft">
+            <article>
+                <h2 class="content-container__subtitles content-container__subtitles--yellow">La edad de oro de los vikingos</h2>
+            </article>
+        </div>
+        <div class="content-container__subtitles content-container__subtitles--left3 content-container__subtitles--paddingleft">
+            <article class="content-container__subtitles content-container__subtitles--left">
+                <h2>El corazón del imperio azteca</h2>
+                <p class="content-container__subtitles--yellow content-container__subtitles--small ">El templo mayor de Tenochtitlán</p>
+            </article>
+        </div>
+        <div class="content-container__subtitles content-container__subtitles--left4 content-container__subtitles--paddingleft">
+            <article class="content-container__subtitles content-container__subtitles--big">
+                <h2 class="content-container__subtitles content-container__subtitles--semilarge">Julio César</h2>
+                <p class="content-container__subtitles--small">La vida privada del hombre más poderoso de Roma</p>
+            </article>
+        </div>
+        <div class="content-container__subtitles content-container__subtitles--right">
+            <article>
+                <h2>Esparta</h2>
+                <p class="content-container__subtitles content-container__subtitles--small" >Admirada, temida y detestada</p>
+            </article>
+        </div>
 </body>
 </html>
