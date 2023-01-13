@@ -1,0 +1,122 @@
+:root{
+  --main-color: rgb(0, 0, 0);
+  --background-color: #5e5c55ef;
+  --font-color: #e7e2e2;
+}
+
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color);
+  background-color: var(--main-color);
+}
+
+.newspaper {
+  position: relative;
+  max-width: 750px;
+  min-width: 200px;
+  height: max-content;
+  padding: 1rem 1.5rem;
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+
+.news_name {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  text-align: center;
+}
+.news_info {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.news_info h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.news_tittle {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.news_subtittle {
+  font-size: 30px;
+  text-align: center;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.news_image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .newspaper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, max-content);
+    gap: 0.5rem;
+  }
+  .news_name {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+  }
+  .news_info {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .news_info h4 {
+    font-size: 25px;
+  }
+  .news_info span {
+    font-size: 25px;
+  }
+
+  .news_content {
+    padding-right: 1rem;
+    border-right: 1px solid var(--main-color);
+  }
+  .news_tittle {
+    grid-column: 1/3;
+    margin: 0;
+    padding: 0;
+    font-size: 95px;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    line-height: 0.9;
+  }
+  .news_subtittle {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    text-align: left;
+  }
+  .news_description {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .news_description p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .news_image {
+    padding-left: 1rem;
+  }
+  .news_image_text {
+    font-size: 12px;
+  }
+}
