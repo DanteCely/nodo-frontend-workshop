@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+      <h1 id="title">CINEMA SURVEY-FORM</h1>
+      <p id="description">Thank you for your time</p>
+      <form id="survey-form">
+        <fieldset>
+        <label id="name-label">NAME: <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+        <label id="email-label">EMAIL: <input id="email" name="email" type="email" required placeholder="youremail@example.com"/></label>
+        <label id="number-label">AGE: <input id="number" name="number" type="number" min="13" max="130" placeholder="Age" /></label>
+        </fieldset>
+
+        <fieldset>
+        <p>YOU LIKE THE MOVIES?</p>
+        <label for="yes"><input id="yes" type="radio" name="radio-group" value="1" class="inline" /> YES</label>
+        <label for="no"><input id="no" type="radio" name="radio-group" value="2" 
+        class="inline" /> NO</label>
+        <label for="maybe"><input id="maybe" type="radio" name="radio-group" value="3" 
+        class="inline" /> MAYBE</label>
+        </fieldset>
+
+        <fieldset>
+        <p>WHAT KIND OF MOVIES YOU LIKE?</p>
+       <label>
+       <input id="checkbox1" type="checkbox"  name="checkbox1" class="inline" value="1" /> ACTION
+       </label>
+        <label>
+      <input id="checkbox2" type="checkbox"  name="checkbox2" class="inline" value="2" /> ADVENTURE </label>
+      <input id="checkbox3" type="checkbox"  name="checkbox3" class="inline" value="3" /> FEAR </label>
+        </fieldset>
+
+
+        <fieldset>
+        <label id="dropdown-label">WHO IS YOUR FAVORITE DIRECTOR?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Steven Spielberg</option>
+            <option value="2">Quentin Tarantino</option>
+            <option value="3">Charles Chaplin</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="like">What else would you like to say:
+        <textarea id="like" name="like" rows="5" cols="50" placeholder="I like ..."></textarea>          
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+          </label>
+      </form>
+      </body>
