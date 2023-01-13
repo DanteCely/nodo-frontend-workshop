@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SlidingPuzzle</title>
+    <link rel="stylesheet" type="text/css" href="puzzle.css">
+    <script src="script.js"></script>
+  </head>
+
+<body>
+<div id="puzzle-container">
+    <table id="puzzle">
+        <tr>
+            <td class="puzzle-number" id="puzzle-1">1</td>
+            <td class="puzzle-number" id="puzzle-2">2</td>
+            <td class="puzzle-number" id="puzzle-3">3</td>
+        </tr>
+        <tr>
+            <td class="puzzle-number" id="puzzle-4">4</td>
+            <td class="puzzle-number" id="puzzle-5">5</td>
+            <td class="puzzle-empty" id="puzzle-empty"></td>
+        </tr>
+        <tr>
+            <td class="puzzle-number" id="puzzle-6">6</td>
+            <td class="puzzle-number" id="puzzle-7">7</td>
+            <td class="puzzle-number" id="puzzle-8">8</td>
+        </tr>
+    </table>
+    <div id="controls">
+        <button id="shuffle-button">Shuffle</button>
+        <button id="reset-button">Reset</button>
+        <p>Moves: <span id="move-counter"></span></p>
+        <p>Time: <span id="time-counter"></span></p>
+    </div>
+</div>
+</body>

@@ -5,6 +5,7 @@
 You can coose an image or numbers!
 
 Go for it! You need:
+
 - Know a little bit of Array & Matrix
 - CSS Transition
 - CSS Animation `@keyframes`
