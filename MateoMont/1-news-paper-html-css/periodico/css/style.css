@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+
+.header{
+    /* background: rebeccapurple; */
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    }
+#daily{ 
+    text-align:left;
+    display: flex;
+}
+#precio{
+    text-align:right;
+}
+.nav{
+    /* background: aqua; */
+    font-size: 34px;
+    width: 100%;
+    height: 100%; 
+    text-align: center;   
+}
+.article{
+    display: flex;
+    width: 100%;
+}
+.izquierdo{
+    /* background: gray; */
+    width: 100%;
+
+}
+
+#texto{
+    display: flex;
+    width: 100%;
+}
+#izq{
+    /* background-color: red; */
+    width: 50%;
+}
+#der{
+    /* background-color: blue; */
+    width: 50%;
+}
+.derder{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    }
+
+.footer{
+    /* background-color: brown; */
+    color: beige;
+    font-size: 28px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
