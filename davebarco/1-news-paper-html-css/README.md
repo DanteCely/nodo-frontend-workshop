@@ -1,5 +1,7 @@
 ### News Paper with HTML and CSS
+
 You can choose a News paper and replicate it. Bear in mind the News paper has to have:
+
 - Local fonts:
   - [Google Fonts](https://fonts.google.com/)
   - [Free Font Utopia](https://www.fontsquirrel.com/)
@@ -15,3 +17,8 @@ You can choose a News paper and replicate it. Bear in mind the News paper has to
 - Responsive handling
   - [Como establecer rangos de ancho para tus CSS Media Queries](https://www.freecodecamp.org/espanol/news/como-establecer-rango-de-ancho-para-tus-css-media-queries/)
   - [A Hands-On Guide to Mobile-First Responsive Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
+
+---
+
+This is a very basic example, and you would likely want to style it with CSS to resemble a newspaper article more closely, like setting a font type,size, and color, Add Some margins and formatting.
+Also, you would likely want to use a more advanced layout and design, as well as including multiple articles and images on the page, for a more accurate replica of a newspaper front page.
