@@ -3,26 +3,32 @@
     --dark-yellow: #FFD74E;
     --yellowred: #F5665B;
     --vs: 0.8vw;
-    --sm: 1.5vw;
-    --md: 2.8vw;
-    --lg: 22vw;
-    --sl: 10vw; 
+    --sm: 1.5rem;
+    --md: 3rem;
+    --lg: 20rem;
+    --sl: 10rem; 
 }
-@media (max-width: 540px) {
+@media (max-width: 806px) {
     :root {
-        --sm: 2vw;
-        --md: 3vw;
-        --lg: 24vw;
-        --sl: 12vw;
+        --vs: 0.8vw;
+        --sm: 1.5vw;
+        --md: 2.8vw;
+        --lg: 15vw;
+        --sl: 10vw; 
     }
-}
+    }
 body {
+    display: flex;
+    justify-content: center;
+}
+main {
     background-image: url(../images/julioCesar.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    height: 100%;
+    width: 806px;
+    height: 960px;
 }
 .content-container {
     text-transform: uppercase;
@@ -30,9 +36,8 @@ body {
 }
 .content-container__subtitles--grid {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(5, 161.2px);
     grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 13.5% 12.5% 11.5%;
-    height: 100%;
 }
 
 .content-container__subtitles {
@@ -89,7 +94,7 @@ body {
     font-size: var(--sl);
 }
 .content-container__subtitles--paddingleft {
-    padding-left: 1em;
+    padding-left: 1rem;
 }
 .content-container__subtitles--paddingright {
     padding-right: 1em;
