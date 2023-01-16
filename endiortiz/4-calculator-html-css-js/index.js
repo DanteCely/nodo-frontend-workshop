@@ -1,38 +1,50 @@
-import buttonsData from './buttons.json' assert { type: 'json' };
+import buttonsData from './assets/data/buttons.json' assert { type: 'json' };
 
-const keyboardCalculator = document.getElementById('keyboard');
-const board = document.querySelector('.board');
+const calculator = document.querySelector('.calculator');
+const display = document.querySelector('.calculator__display');
 let displayLastValue = document.querySelector('.last-value');
 let displayCurrentValue = document.querySelector('.current-value');
 let concatenateNumber = '';
 let operationSign = '';
+let dividioEntreCero = false;
 
-
+// Función para realizar las respectivas operaciones cuando haya un signo
+// en el elemento superior del display
 function calcular () {
-    if (displayLastValue.innerText.indexOf('+') !== -1) {
+    // Si no hay numeros en el tablero, no sucede nada
+    if ((displayCurrentValue.innerText == '') && displayLastValue.innerText == '') {
+        return;
+    } 
+    else if (displayLastValue.innerText.endsWith('+')) {
         displayLastValue.innerText = displayLastValue.innerText.slice(0,-2);
         let result = Number(displayLastValue.innerText) + Number(displayCurrentValue.innerText);
         displayLastValue.innerText = result;
         displayCurrentValue.innerText = '';
         concatenateNumber = '';
-    } else if (displayLastValue.innerText.indexOf('−') !== -1) {
+    } else if (displayLastValue.innerText.endsWith('−')) {
         displayLastValue.innerText = displayLastValue.innerText.slice(0,-2);
-        let result = Number(displayLastValue.innerText) + Number(displayCurrentValue.innerText);
+        let result = Number(displayLastValue.innerText) - Number(displayCurrentValue.innerText);
         displayLastValue.innerText = result;
         displayCurrentValue.innerText = '';
         concatenateNumber = '';
-    } else if (displayLastValue.innerText.indexOf('×') !== -1) {
+    } else if (displayLastValue.innerText.endsWith('×')) {
         displayLastValue.innerText = displayLastValue.innerText.slice(0,-2);
-        let result = Number(displayLastValue.innerText) + Number(displayCurrentValue.innerText);
+        let result = Number(displayLastValue.innerText) * Number(displayCurrentValue.innerText);
         displayLastValue.innerText = result;
         displayCurrentValue.innerText = '';
         concatenateNumber = '';
-    } else if (displayLastValue.innerText.indexOf('÷') !== -1) {
+    } else if (displayLastValue.innerText.endsWith('÷') && (Number(displayCurrentValue.innerText) > 0)) {
         displayLastValue.innerText = displayLastValue.innerText.slice(0,-2);
-        let result = Number(displayLastValue.innerText) + Number(displayCurrentValue.innerText);
+        let result = Number(displayLastValue.innerText) / Number(displayCurrentValue.innerText);
         displayLastValue.innerText = result;
         displayCurrentValue.innerText = '';
         concatenateNumber = '';
+    } else if (displayLastValue.innerText.endsWith('÷') && (Number(displayCurrentValue.innerText) == 0)) {
+        alert('No puedes dividir entre 0');
+        displayCurrentValue.innerText = '';
+        concatenateNumber = '';
+    } else if (displayCurrentValue.innerText !== '' && (displayLastValue.innerText == '')) {
+        return;
     } else {
         alert('Tienes que agregar un signo para poder operar')
     }
@@ -43,7 +55,7 @@ buttonsData.forEach((value) => {
     const button = document.createElement('button', { type: 'button' });
     const { content, type, horizontal, operation } = value;
     button.innerText = content;
-    keyboardCalculator.appendChild(button);
+    calculator.appendChild(button);
 
     button.classList.add(type);
     
@@ -51,26 +63,34 @@ buttonsData.forEach((value) => {
         button.classList.add(horizontal);
     }
 
-
-    function acomodarBoard () {
-        // Para ejecutar la funcion calcular si el usuario repite el mismo botón
-        if (displayLastValue.innerText.indexOf(content) !== -1) {
-            calcular();
-            displayLastValue.innerText += ` ${content}`;
-        } 
-        
-        // Para asegurarse de que no va a haber más de un signo:
-        else if (["+", "−", "×", "÷"].some(fn => displayLastValue.innerText.includes(fn))) {
+    // Función para acomodar display cuanto se presione un botón con el type "operator"
+    function acomodarDisplay () {
+        // Para que solo se pueda agregar un signo si ya hay números en el tablero
+        if ((displayCurrentValue.innerText == '') && displayLastValue.innerText == '') {
+            return;
+        }
+        // Si ya hay un signo arriba, se remplaza por el nuevo:
+        else if (["+", "−", "×", "÷"].some(fn => displayLastValue.innerText.includes(fn)) && displayCurrentValue.innerText == '') {
             displayLastValue.innerText = displayLastValue.innerText.slice(0, -2);
             displayLastValue.innerText += ` ${content}`;
-            console.log('entra')
-        } else if (displayLastValue.innerText == '') {
-            displayLastValue.innerText = `${concatenateNumber} ${content}`;
+        } 
+        // Para ejecutar la funcion calcular si el usuario repite el mismo botón de operación
+        else if (["+", "−", "×", "÷"].some(fn => displayLastValue.innerText.includes(fn)) && displayCurrentValue.innerText !== '') {
+            calcular();
+            displayLastValue.innerText += ` ${content}`;
+        }
+        
+        // Si el elemento superior no tiene nada, se sube el número concatenado y el signo de operación
+        // También se vacía el elemento inferior y se resetea la variable concatenateNumber
+        else if (displayLastValue.innerText == '') {
+            displayLastValue.innerText = `${concatenateNumber.slice(0, 17)} ${content}`;
             displayCurrentValue.innerText = '';
             concatenateNumber = '';
+        // Si el elemento superior ya tiene algo, se le concatena el signo
         } else {
             displayLastValue.innerText += ` ${content}`;
         }
+        
     }
 
 
@@ -86,7 +106,7 @@ buttonsData.forEach((value) => {
             // Para que no se pueda agregar más de un punto decimal
             if((concatenateNumber.indexOf('.') === -1)  || (concatenateNumber.indexOf('.') !== -1 && content !== '.')) {
                 concatenateNumber = concatenateNumber.toString() + content.toString();
-                displayCurrentValue.innerText = concatenateNumber;
+                displayCurrentValue.innerText = concatenateNumber.slice(0, 17);
             }
         } 
 
@@ -95,16 +115,16 @@ buttonsData.forEach((value) => {
             operationSign = operation;
             switch (operationSign) {
                 case 'add':
-                    acomodarBoard();
+                    acomodarDisplay();
                     break;
                 case 'subtract':
-                    acomodarBoard();
+                    acomodarDisplay();
                     break;
                 case 'multiply':
-                    acomodarBoard();
+                    acomodarDisplay();
                     break;
                 case 'divide':
-                    acomodarBoard();
+                    acomodarDisplay();
                     break;
                 case 'equal':
                     calcular();

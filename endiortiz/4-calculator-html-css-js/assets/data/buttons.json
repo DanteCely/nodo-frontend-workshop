@@ -65,11 +65,11 @@
         "operation": "add"
     },
     {
-        "content": ".",
+        "content": "0",
         "type": "number"
     },
     {
-        "content": "0",
+        "content": ".",
         "type": "number"
     },
     {
