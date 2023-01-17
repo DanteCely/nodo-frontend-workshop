@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Wilson Wells';
+    src: url(./assets/fonts/Wilson-wells/Wilson-wells.ttf);
+}
+
+:root {
+    --typography-title: 'Wilson Wells', 'Times New Roman', Times, serif;
+    --typography-primary: Helvetica, Arial, sans-serif;
+    --typography-secundary: 'M PLUS 1p', Verdana;
+}
+* {
+    font-family: var(--typography-primary);
+}
+body {
+    background-color: #119C4B;
+}
+h1 {
+    text-align: center;
+    font-size: 7.5rem;
+    font-family: var(--typography-title);
+}
+h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+hr {
+    border: 1px solid;
+}
+figcaption {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+.newsPaper {
+    background-color: #D5D5D5;
+    width: 1000px;
+    height: 700px;
+    padding: 2rem;
+    border: 3px solid black;
+}
+.daily-flex {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.newsPaper__content--flex {
+    display: flex;
+    justify-content: space-between;
+}
+.newsPaper__content--left {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.newsPaper__content--right {
+    width: 30%;
+    border-left: 2px solid black;
+    padding-left: 1.5rem;
+    text-align: justify;
+}
+
+.newsPaper__content--textleft {
+    width: 35%;
+    text-align: justify;
+    padding-right: 1rem;
+}
+.newsPaper__figure {
+    padding-right: 1.5rem;
+}
+.newsPaper__image {
+    width: 420px;
+}
+.newsPaper__content--subtitle {
+    font-weight: 600;
+    font-size: 0.98rem;
+}
