@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>The Wicher 3</title>
+  </head>
+  <body>
+    <header>
+      <div class="Header">
+        <img class="logo" src="Imagenes/lobo.jpg" alt="Logo_Lobo" />
+      </div>
+      <div class="Titulo">
+        <h1>The Wicher 3</h1>
+        <br />
+        <p class="Subtitulo">Sigue la Senda Del Brujo</p>
+      </div>
+    </header>
+    <section class="Contenido">
+      <h2>Tienes lo necesario para seguir la senda del Brujo?</h2>
+      <br />
+      <p>
+        llena el formulario y descubre si tienes lo necesario para ser un brujo
+        de la escuela del Lobo
+      </p>
+
+      <form>
+        <fieldset class="Celda_De_Pregunta">
+          <legend>Cual es tu nombre?</legend>
+          <div class="nombre">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" placeholder="Geralt" required />
+          </div>
+          <div>
+            <label for="Apellido" class="Apellido">Apellido</label>
+            <input type="text" placeholder="De Rivia" />
+          </div>
+        </fieldset>
+        <br />
+        <fieldset class="Celda_De_Pregunta">
+          <legend>Cual Es Tu Fecha De Nacimiento?</legend>
+          <div class="nombre">
+            <label for="Fecha">Fecha</label>
+            <input type="date" required />
+          </div>
+          <div>
+            <label for="Edad">Edad</label>
+            <input type="number" required min="10" />
+          </div>
+        </fieldset>
+        <br />
+        <fieldset class="Celda_Pregunta_Multiple">
+          <legend>
+            Cuales De Estas Facciones Estan Disponibles Para Jugar En Gwynt?
+          </legend>
+          <div>
+            <input type="checkbox" required />
+            <label for="Faccion">Monstruos</label>
+          </div>
+          <div>
+            <input type="checkbox" required />
+            <label for="Faccion">Imperio Nilfgaardiano</label>
+          </div>
+          <div>
+            <input type="checkbox" required />
+            <label for="Faccion">Reinos Del Norte</label>
+          </div>
+          <div>
+            <input type="checkbox" required />
+            <label for="Faccion">Ducado de toussaint </label>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset class="Celda_Pregunta_Multiple">
+          <legend>Cual De Estas Pociones Regenera Tu Salud?</legend>
+
+          <div>
+            <input type="radio" name="Pociones" />
+            <label for="Golondrina">Golondrina</label>
+          </div>
+
+          <div>
+            <input type="radio" name="Pociones" />
+            <label for="Gato">Gato</label>
+          </div>
+
+          <div>
+            <input type="radio" name="Pociones" />
+            <label for="Rayo">Rayo</label>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Cual Es Tu Hechicera Favorita</legend>
+          <label for="Hechicera">Triss Merigold</label>
+          <input type="range" id="Hechiceras" />
+          <label for="Hechiceras">Yennefer de Vengerberg</label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Las Escuelas de Brujos</legend>
+          <label for="Escuelas">Cual Es Tu Escuela Preferida?</label>
+          <select name="Escuelas">
+            <option value="Gato">Gato</option>
+            <option value="Grifo">Grifo</option>
+            <option value="Lobo">Lobo</option>
+            <option value="Vibora">Vibora</option>
+            <option value="Oso">Oso</option>
+            <option value="Manticora">Manticora</option>
+          </select>
+          <br /><br />
+          <label for="text-area">Cuentanos Porque Es Tu Escuela Preferida</label
+          ><br />
+          <textarea
+            id="text-area"
+            cols="30"
+            rows="10"
+            placeholder="Mi Escuela Preferida Es..."
+          ></textarea>
+        </fieldset>
+        <br />
+        <div class="buttons">
+          <button class="boton" type="reset">Reset info</button>
+          <input
+            class="boton"
+            type="submit"
+            id="button"
+            name="button"
+            value="Sign in"
+          />
+        </div>
+      </form>
+    </section>
+    <footer>&copy; Copyright - Luis Miguel M</footer>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: aqua;
+}
+
+#Tablero {
+  width: 360px;
+  height: 360px;
+  background-color: aquamarine;
+  border: 10px solid blue;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Tablero_Imagen {
+  width: 118px;
+  height: 118px;
+  border: 1px solid black;
+}

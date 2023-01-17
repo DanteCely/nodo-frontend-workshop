@@ -1,0 +1,147 @@
+body {
+  background-color: #f6f6f6;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  margin: 0;
+  letter-spacing: 2rem;
+}
+
+/********* clases *****/
+
+.titulo_tipo_1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.titulo_tipo_2 {
+  font-family: "Rubik", sans-serif;
+}
+
+.num_edicion {
+  margin-left: 10px;
+}
+.Barra_1 {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto_barras {
+  color: white;
+}
+
+.Barra_2 {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.titular {
+  text-align: center;
+  letter-spacing: 10px;
+}
+.titular_1 {
+  font-size: 90px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 5rem;
+}
+
+.linea_vertical {
+  border-left: 4px solid #4b42f5;
+  height: 200px;
+}
+
+.secciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "columa_izquierda centro_superior columna_derecha"
+    "columa_izquierda centro_inferior columna_derecha";
+}
+
+.columna_izquierda {
+  grid-area: columa_izquierda;
+
+  border-right-style: solid;
+  border-right-color: black;
+  padding-right: 20px;
+}
+
+.centro_superior {
+  grid-area: centro_superior;
+
+  padding: 20px;
+  text-align: justify;
+}
+
+.centro_inferior {
+  grid-area: centro_inferior;
+  padding: 20px;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.columna_derecha {
+  grid-area: columna_derecha;
+
+  border-left-style: solid;
+  border-left-color: black;
+  padding-left: 20px;
+}
+
+.texto_centro_inferior {
+  column-count: 3;
+}
+
+.linea_2 {
+  flex-grow: 1;
+}
+
+.linea_superior {
+  display: flex;
+}
+
+.prueba {
+  justify-content: right;
+}
+
+/******* id *****/
+
+#foto_familia {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#linea_1 {
+  height: 2px;
+  background-color: #ff0000;
+  border: none;
+  width: 50px;
+  margin-top: 13px;
+  margin-bottom: 0px;
+}
+
+#inicio_titulo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Rubik", sans-serif;
+}
+
+#linea_2 {
+  height: 2px;
+  background-color: #ff0000;
+  border: none;
+  margin-top: 13px;
+  margin-bottom: 0px;
+}
