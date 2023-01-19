@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'arcade';
+    src: url(../fonts/arcade/ARCADE.TTF);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    color: #CF6F49;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 8rem;
+    font-family: 'arcade', sans-serif;
+    text-align: center;
+}
+h2 {
+    color: black;
+}
