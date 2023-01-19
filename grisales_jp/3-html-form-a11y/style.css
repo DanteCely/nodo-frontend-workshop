@@ -1,3 +1,47 @@
-* {
-    background-color: lightblue;
+*{
+    size: 62.5%;
+    margin: 0;
 }
+:root {
+    --titulo: rgb(248, 255, 32);
+    --legend: rgb(235, 238, 145)
+}
+@font-face {
+    font-family: pelifont;
+    src: url(/grisales_jp/3-html-form-a11y/Montage-PKMJm.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+body {
+    background-image: url(https://cdn.wallpapersafari.com/71/59/4H9j7C.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    font-family: pelifont;
+    font-size: 4rem;
+    color: var(--titulo);
+    text-align: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+fieldset{
+    margin: 1rem;
+    padding: 1rem;
+    width: 20rem;
+}
+legend {
+    font-family: pelifont;
+    font-size: 2rem;
+    color: var(--legend);
+}
+label {
+    font-family: 'Overpass', sans-serif;
+}
+
