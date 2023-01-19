@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'calculatorfont';
+    src: url('./assets/fonts/calculator-font.ttf') format('truetype');
+}
+
+$font-calculator: 'calculatorfont', sans-serif;
+$color-body: #F1F3F4;
+$color-calculator: #839CF2;
+$color-main-shadow: #5D77DA;
+$color-main-shadow-light: #9AB2FC;
+$color-number: #FFFFFF;
+$color-number-hover: #C4C6C7;
+$color-button-inner-shadow: #606060;
+$color-delete: #55CFFF;
+$color-delete-hover: #3291B6;
+$color-operator: #FF9913;
+$color-operator-hover: #A86001;
+$color-display-background: #5F79D4;
+$color-display-shadow: #3149B6;
+
+* {
+    font-family: $font-calculator;
+}
+body {
+    background-color: $color-body;
+}
+
+// Contenedor principal
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+// Contenedor de botones y display
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: $color-calculator;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: inset -10px -10px 15px 1px $color-main-shadow, inset 10px 10px 15px 1px $color-main-shadow-light;
+}
+
+// Botones
+button {
+    cursor: pointer;
+    background-color: $color-number;
+    border: none;
+    margin: 5px;
+    padding: 0;
+    border-radius: 1.5em;
+    font-size: 1.5rem;
+    box-shadow: inset 0px 0px 25px -10px $color-button-inner-shadow, 0px 10px 15px -5px $color-main-shadow;
+    
+    &:hover {
+        background-color: $color-number-hover;
+    } 
+    &:active {
+            box-shadow: unset;
+        }
+    &.delete-all {
+        background-color: $color-delete;
+        grid-column: span 2;
+    } &.delete-all:hover, &.delete:hover {
+        background-color: $color-delete-hover;
+    }
+    &.delete {
+        background-color: $color-delete;
+    }
+    &.operator {
+        background-color: $color-operator;
+    } &.operator:hover {
+        background-color: $color-operator-hover;
+    } &.operator.double {
+        grid-column: span 2;
+    }
+}
+
+// Display de la calculadora
+.calculator__display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: $color-display-background;
+    border-radius: 30px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: inset 0px 15px 9px -13px $color-display-shadow, inset 0px 0px 10px -3px $color-display-shadow;
+}
+.last-value {
+    font-size: 2em;
+}
+.current-value {
+    font-size: 1.5em;
+}
