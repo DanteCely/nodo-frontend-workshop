@@ -1,11 +1,7 @@
-### This game is a challenge to code and to play
+# [Puzzle-Game](https://youtu.be/S6GNtMGNcUE)
+- Coding Tutorial: https://youtu.be/S6GNtMGNcUE
+- Demo: https://imkennyyip.github.io/Puzzle-Game/
 
-![image](https://user-images.githubusercontent.com/18010349/197683456-088c9549-06a0-4548-97f1-1900805a68fc.png)
+In this tutorial, you will learn how to create a drag and drop Avengers themed puzzle game! You will learn how to shuffle the puzzle pieces, write click handlers to drag and drop puzzle pieces onto the board, and keep track of the number of turns the player has taken to solve the puzzle.
 
-You can coose an image or numbers!
-
-Go for it! You need:
-- Know a little bit of Array & Matrix
-- CSS Transition
-- CSS Animation `@keyframes`
-- DOM Manipulation `appendChild`
+![puzzle-preview](https://user-images.githubusercontent.com/78777681/163045424-30151af3-03e3-4290-90fd-feb8885f2311.png)
