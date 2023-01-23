@@ -1,16 +1,25 @@
 <header>
   <img src="" alt="">
-  <h1>To Do List</h1>
+  <h1> {{ title}} </h1>
+  <input type="text" placeholder="Ingrese la nueva tarea" #tarea>
+  <br>
+  <br>
+  <button (click)="agregarTarea(tarea.value)">Agregar tarea</button>
+  <br>
+  <br>
+  <ul *ngFor="listado de item">
+    <li> {{item.name}} </li>
+  </ul>
   <nav>
-    <a routerlink="/login">Login</a>
+    <a routerLink="/">Home</a>
     <br />
-    <a routerlink="/main">Home</a>
+    <a routerLink="/login">Login</a>
   </nav>
 </header>
 <hr />
 <main>
-<div>Aquí van las rutas para éste módulo</div>
-<router-outlet></router-outlet>
+  <div>Aquí van las rutas para este módulo</div>
+  <router-outlet></router-outlet>
 </main>
-<br />
-<footer>Info extra</footer>
+<hr />
+<footer>Info Extra</footer>
