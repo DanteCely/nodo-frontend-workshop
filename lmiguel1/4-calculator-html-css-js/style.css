@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  background: grey;
+  
+}
+
+.Background {
+  background: rgb(40, 40, 41);
+}
+
+.Keyboard {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+}
+
+.Keyboard > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+}
+
+.Keyboard > button:hover {
+  background-color: rgb(191, 189, 189);
+}
+
+.Double-block {
+  grid-column: span 2;
+}
+
+.Screen {
+  grid-column: 1 / -1;
+  background-color: rgba(105, 232, 230, 0.75);
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.Screen .Operador_Pasado {
+  color: rgb(67, 67, 67);
+  font-size: 1.5rem;
+}
+
+.Screen .Operador_Actual {
+  color: rgb(29, 29, 29);
+  font-size: 2rem;
+}
