@@ -13,6 +13,9 @@ export class AppComponent {
     this.lista.push({id:this.lista.length, name:item})
     console.log(this.lista);
   }
-
+  quitarTarea(id:number) {
+    console.log(id);
+    this.lista = this.lista.filter(item=>item.id!==id);
   }
+}
 
