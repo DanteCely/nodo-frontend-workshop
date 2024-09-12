@@ -1,0 +1,48 @@
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+#calculator {
+  width: 17rem;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+}
+button.double {
+  width: 8rem;
+}
+button.operator {
+  background-color: #1b7f79;
+}
+button.operator:hover {
+  background-color: #145e59;
+}
+button.operator:active {
+  background-color: #0d3c39;
+}
+button.number {
+  background-color: #00ccc0;
+}
+button.number:hover {
+  background-color: #01998f;
+}
+button.number:active {
+  background-color: #026962;
+}
+button.extra {
+  background-color: #d96941;
+}
+button.extra:hover {
+  background-color: #a34f31;
+}
+button.extra:active {
+  background-color: #64311e;
+}
+
+/*# sourceMappingURL=index.css.map */
