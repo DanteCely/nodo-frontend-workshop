@@ -6,7 +6,7 @@ main{
     background-image: var(--degradado); /*fondo azul*/
     border: var(--border-main) solid var(--color-principal); /*bordo amarillo*/
     padding: var(--padding-main); /*estacio que esta adentro alrededor de la revista*/
-    margin: 5em auto; /*espacio alrededor de la revista, ayuda a que quede centrado*/
+    margin: 0em auto; /*espacio alrededor de la revista, ayuda a que quede centrado*/
     width: 612px;
     height: 791px;
     position: relative;
