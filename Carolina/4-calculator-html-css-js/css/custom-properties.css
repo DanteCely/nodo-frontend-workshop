@@ -1,0 +1,39 @@
+:root {
+  /* Font Sizes */
+  --font-size-sm: 1.6rem;
+  --font-size-md: 1.8rem;
+  --font-size-lg: 1.8;
+  --font-size-ulg: 2.1rem;
+  --font-size-xl: 2.6rem;
+  --font-size-xxl: 2.3rem;
+  --font-size-xxxl: 3.8rem;
+
+    --printipal-font: 'Raleway', sans-serif;
+    --calculator-font: calculatorText;
+
+  --printipal-color: #000000;
+  --calculator-color: rgb(189, 153, 223);
+
+  --border-color: #df6baf;
+  --body-color: #1c8a99;
+
+  --radius: 10px;
+  --calculator-width: 50%;
+  --body-height: 100vh;
+  --calculator-border: 0.5rem solid var(--border-color);
+
+  --active-button: rgb(40, 185, 211);
+}
+
+@font-face {
+    font-family: calculatorText;
+    src: url(../fonts/Calculator.ttf);
+}
+
+button:active {
+  background-color: var(--active-button);
+}
+
+button::selection {
+  color: var(--printipal-color);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/custom-properties.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <div class="display" id="display">
+                <div id="calculo"></div>
+                <div id="result"></div>
+            </div>
+            <button onclick="borrar()" class="col2" >C</button>
+            <button onclick="deleteLastDigit()">&larr;</button>
+            <button onclick="addValue('/')">/</button>
+            <button onclick="addValue(7)">7</button>
+            <button onclick="addValue(8)">8</button>
+            <button onclick="addValue(9)">9</button>
+            <button onclick="addValue('*')">*</button>
+            <button onclick="addValue(4)">4</button>
+            <button onclick="addValue(5)">5</button>
+            <button onclick="addValue(6)">6</button>
+            <button onclick="addValue('-')">-</button>
+            <button onclick="addValue(1)">1</button>
+            <button onclick="addValue(2)">2</button>
+            <button onclick="addValue(3)">3</button>
+            <button onclick="addValue('+')">+</button>
+            <button onclick="addValue('.')">.</button>
+            <button onclick="addValue(0)">0</button>
+            <button onclick="resultado()" class="col2">=</button>
+        </div>
+    </main>
+    <footer>
+        &copy; Copyright - Code made by Caro&#x1F497
+    </footer>
+</body>
+</html>
