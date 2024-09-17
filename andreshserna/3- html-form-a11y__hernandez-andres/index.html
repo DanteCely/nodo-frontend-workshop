@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formularion inscripcion NODO</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/resources/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/resources/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
+    <link rel="manifest" href="/resources/manifest.json">
+    <meta name="msapplication-TileColor" content="/resources/#f#ffffff">
+    <meta name="msapplication-TileImage" content="/resources/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <h1>Formulario de inscripcion al modulo "Front End" de NODO - EAFIT</h1><br>
+
+    <div class="gif">
+        <img id="gif" src="/develop__hernandez-andres/feature/3- html-form-a11y__hernandez-andres/images/logo-nodo-an.gif">
+    </div>
+
+    <div class="firts">
+    <label for="first-name">Introduce tu nombre:
+        
+    </label><br>
+    <input id="first-name" type="text" name="textfield" autocomplete="" required>
+    </div>
+
+    <div class="firts">
+    <label for="last-name" class="required-field">Introduce tus apellidos:</label><br>
+    <input id="last-name" type="text" autocomplete="" name="textfield" aria-describedby="required-message" required>
+    </div><br>
+    
+    <div>
+        <label for="age">Introduce tu edad:</label>
+        <input type="number" id="age" name="age" min="15" max="80">
+    </div>
+
+
+    <div>
+
+        <label for="sex">¿Con qué genero te identificas?</label><br>
+        <select id="sex" name="select">
+        <option value="1">Hombre</option>
+        <option value="2">Mujer</option>
+        <option value="3">Otro</option></select><br>
+
+    </div><br>
+
+    <div>
+
+        <label for="education">¿Cual es tu nivel educativo?</label><br>
+        <select id="education" name="select">
+        <option value="1">Bachiller</option>
+        <option value="2">Profesional</option>
+        <option value="3">Tecnico</option>
+        <option value="4">Tecnologo</option>
+        </select><br>
+
+    </div><br>
+
+    <div>
+        <label for="address">Direccion de residencia:</label><br>
+        <textarea id="address" autocomplete=""></textarea>
+    </div><br>
+
+    <div class="lenguajes">
+        <fieldset>
+            <legend>¿Qué lenguages de desarrollo web manejas?</legend>
+
+            <input id="html" type="checkbox" name="languages" value="html" required>
+            <label for="html">HTML</label><br>
+
+            <input id="css" type="checkbox" name="languages" value="css" required>
+            <label for="css">CSS</label><br>
+
+            <input id="javascript" type="checkbox" name="languages" value="javascript" required>
+            <label for="javascript">JavaScript</label><br>
+
+            <input id="typescript" type="checkbox" name="languages" value="typescript" required>
+            <label for="typescript">TypeScript</label><br>
+
+            <input id="python" type="checkbox" name="languages" value="python" required>
+            <label for="python">Python</label>
+
+        </fieldset>
+    </div><br>
+
+    <div>
+        <fieldset>
+            <legend>¿Qué modalidad de clases prefieres?</legend>
+
+            <input id="presential" type="radio" name="modality" value="presential" required>
+            <label for="presential">Presencial</label><br>
+
+            <input id="virtual" type="radio" name="modality" value="virtual" required>
+            <label for="virtual">Virtual</label><br>
+
+            <input id="semi" type="radio" name="modality" value="semi" required>
+            <label for="semi">Semi-presencial</label>
+
+        </fieldset>
+    </div><br>
+
+    <footer>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+    </footer>
+
+</body>
+</html>
