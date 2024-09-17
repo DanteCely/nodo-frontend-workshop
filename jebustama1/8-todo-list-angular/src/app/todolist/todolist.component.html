@@ -1,0 +1,13 @@
+<h3 class="text-center text-secondary mt-5">Task list</h3>
+
+<div class="row">
+    <ul class="list-group col-6 mx-auto">
+        <li class="list-group-item" *ngFor ="let todo of todos; index as i" >
+                {{todo.task}}
+            <button class="btn btn-danger right" (click)="removeTodo(i)"> &#215; </button>
+    
+        </li>
+       
+        
+    </ul>
+</div>
