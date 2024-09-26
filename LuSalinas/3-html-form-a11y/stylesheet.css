@@ -1,0 +1,60 @@
+html {
+    background-image: url(./Assets/flower\ background1.jpg);
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    line-height: 0.5rem;
+    opacity: 1;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(181, 9, 115);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+body {
+    display: flex;
+    padding-left: 20%;
+    margin-top: 8%;
+}
+
+.left, .form{
+    margin-right: 1.5rem;
+    padding: 2rem;
+    background-image: url(./Assets/background.png);
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.intro{
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color:rgb(100, 96, 96);
+}
+
+button {
+    background-color: rgb(250, 229, 232);
+    border-radius: 1rem;
+    margin-left:4rem;
+    margin-top: 2rem;
+    height: 2rem;
+    width: 8rem;
+}
+
+footer {
+    opacity: 0.8;
+    margin-top: 0.6rem;
+    text-align: center;
+}
+
+
+  

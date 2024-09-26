@@ -1,5 +1,7 @@
 ### News Paper with HTML and CSS
+
 You can choose a News paper and replicate it. Bear in mind the News paper has to have:
+
 - Local fonts:
   - [Google Fonts](https://fonts.google.com/)
   - [Free Font Utopia](https://www.fontsquirrel.com/)
