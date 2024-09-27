@@ -1,0 +1,40 @@
+
+/*Reseteamos los margin y paddings*/
+*{
+    margin: 0; 
+    padding: 0; 
+    border: 0; /*sobre todo en formularios*/
+    box-sizing: border-box; /*investigar*/
+    vertical-align: baseline; /*investigar*/
+}
+
+/*Evitamos problemas con imagenes img, picture, video, iframe, figure*/
+img{
+    max-width: 100%; /*Esto sirve para que las imagenes no ocupen un tamaño mayor a su contenedor*/
+    width: 100%; /*imagenes pequeñas*/
+    display: block; /*quitar el espacio de las imagenes que tienen inline-block*/   
+}
+
+/*Arreglamos problemas de letras*/
+h1,
+p {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+}
+
+/*configuramos el texto que seleccionamos*/
+::selection{
+    background-color: var(--color-selection);
+    color: var(--color-primary);
+}
+
+/*configuramos la tipografia en toda la web*/
+body{
+    min-height: 100vh;
+    font-size: var(--font-size-lg);
+    font-family: var(--tipo-principal);
+    color: var(--color-letter);
+    line-height: 1.0em; /*optional*/
+}
