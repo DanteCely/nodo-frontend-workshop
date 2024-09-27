@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    color: aliceblue;
+    font-size: 209px;
+}
+
+#contenedor{
+margin: auto;
+margin-top: 50px;
+width: 960px;
+height: 1200px;
+background-image: url(rs-225842-rexfeatures_5031422s.jpg);
+border: 10px solid red
+
+}
+#section{
+    width: 300px;
+    height: 500px;
+}
+.primario{
+    color: aliceblue;
+    font-size: 79px;
+}
+.secundario{
+    color: red;
+    font-size: 26px;
+}
+.primariodos{
+    color: aliceblue;
+    font-size: 60px;
+    float: right;
+    text-align: right;
+}
+.secundariodos{
+    width: 200px;
+    height: 50px;
+    color: red;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+}
+#aside{
+     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

@@ -1,0 +1,79 @@
+
+  
+  /* iPads, Tablets */
+ @media screen and (min-width: 481px) {
+    :root {
+      /* Font Sizes */
+      --font-size-sm: 1.2rem;
+      --font-size-md: 1.6rem;
+      --font-size-lg: 1.8rem;
+      --font-size-ulg: 2.1rem;
+      --font-size-xl: 1.9rem;
+      --font-size-xxl: 2.6rem;
+      --font-size-xxxl: 5.5rem;
+  
+      /* width */
+      --news-paper-width: 76rem; /* TODO: Adjust Tablet & Mobile */
+      /* height */
+      --news-paper-title-height: 10rem;
+  
+      --news-paper-border: 0.3rem solid var(--color-primary)
+    }
+  }
+  
+  /* Small screens, laptops */
+  @media screen and (min-width: 769px) {
+    :root {
+      /* Font Sizes */
+      --font-size-sm: 1.6rem;
+      --font-size-md: 1.8rem;
+      --font-size-lg: 2.1rem;
+      --font-size-ulg: 2.4rem;
+      --font-size-xl: 3.2rem;
+      --font-size-xxl: 4rem;
+      --font-size-xxxl: 7.8rem;
+  
+      /* width */
+      --news-paper-width: 76rem;
+      /* height */
+      --news-paper-title-height: 12rem;
+    }
+  }
+  
+  /* Desktops, large screens */
+  @media screen and (min-width: 1025px) {
+    :root {
+      /* Font Sizes */
+      --font-size-sm: 1.6rem;
+      --font-size-md: 1.8rem;
+      --font-size-lg: 3.6rem;
+      --font-size-ulg: 4.2rem;
+      --font-size-xl: 5.2rem;
+      --font-size-xxl: 6rem;
+      --font-size-xxxl: 11.8rem;
+  
+      /* width */
+      --news-paper-width: 100rem;
+      /* height */
+      --news-paper-title-height: 16rem;
+    }
+  }
+  
+  /* Desktops, large screens */
+  @media screen and (min-width: 1201px) {
+    :root {
+      /* Font Sizes */
+      --font-size-sm: 1.6rem;
+      --font-size-md: 1.8rem;
+      --font-size-lg: 4.2rem;
+      --font-size-ulg: 4.8rem;
+      --font-size-xl: 6rem;
+      --font-size-xxl: 6.8rem;
+      --font-size-xxxl: 12.8rem;
+  
+      /* width */
+      --news-paper-width: 112rem;
+      /* height */
+      --news-paper-title-height: 18rem;
+    }
+  }
