@@ -1,0 +1,86 @@
+
+:root{
+    --background: url(../img/harry-place.jpg);
+    --color-primary: rgba(222, 238, 238, 0.5);
+
+    --color-letter: black;
+    --color-letter-secondary: white;
+    --tipo-principal: 'Marcellus', serif;
+    --tipo-tittle: MagicText;
+
+    --color-letter-slection: rgb(43, 170, 184);
+    --color-selection: #181818;
+
+    --width-main: 70%;
+    --padding-main: 2em;
+    --space-label: 1rem;
+    --text-area-size: 250px;
+
+    --shield-width: 100px;
+    --shield-max-width: 100%;
+
+    /* Font Sizes */
+    --font-size-ssm: 1rem;
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-ulg: 2.1rem;
+    --font-size-xl: 1.9rem;
+    --font-size-xxl: 2.6rem;
+    --font-size-xxxl: 5.5rem;
+
+    --space-line: 0.9;
+}
+
+@font-face {
+    font-family: MagicText;
+    src: url(fonts/HARRYP__.TTF);
+}
+
+/*Celulares*/
+@media screen and (max-width: 480px){
+    :root{
+        --text-area-size: 160px;
+        --font-size-xxxl: 4.8rem;
+        --font-size-sm: 1rem;
+        --space-label: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .input1{
+        padding-bottom: 0.5rem;
+    }
+    
+}
+
+/*tablets*/
+@media screen and (min-width: 481px){
+    :root{
+        --space-label: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .input1{
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px){
+    :root{
+        --space-label: 1rem;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (min-width: 1025px){
+    
+}

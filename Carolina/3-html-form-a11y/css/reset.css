@@ -1,0 +1,40 @@
+img,
+h1,
+h2,
+p,
+div{
+    margin: 0; 
+    padding: 0; 
+    border: 0; /*sobre todo en formularios*/
+}
+
+img{
+    max-width: var(--shield-max-width);
+    width: var(--shield-width);
+    display: block;
+}
+
+h1,
+h2,
+p{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+}
+
+::selection{
+    background-color: var(--color-selection);
+    color: var(--color-letter-slection);
+}
+
+body{
+    min-height: 100vh;
+    font-size: var(--font-size-sm);
+    font-family: var(--tipo-principal);
+    color: var(--color-letter);
+    line-height: 1.0em; /*optional*/
+}
+textarea{
+    width: var(--text-area-size);
+}
